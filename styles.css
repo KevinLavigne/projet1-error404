@@ -79,34 +79,43 @@ footer > ul {
 
 @media screen and (min-width: 768px) {
 
-    .carousel {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width : 100%;
-        grid-gap: 2% 2%;
-        margin: 5% 0;
-    }
     .top12-flex {
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
     }
-    div >iframe {
-        width: 20vw;
-        height: 10vh;
-        padding: 0;
+
+    .carousel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width : 100%;
+        gap: 2% 2%;
+        margin: 5% 0;
     }
+
+    .carousel-frame {
+        width: 45vw;
+        border: 2px solid blueviolet;
+        margin-bottom: 5%;
+        position: relative; 
+        overflow: hidden;
+        padding-top: 37.5%; 
+    }
+
+    div >iframe {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 80%; 
+        border: 0; 
+    }
+
     div > p{
-        width: 20vw;
+        width: 100%;
         height: 10vh;
         text-align: center;
     }   
-    .carousel-frame {
-        width: 20vw ;
-        height: 20vh;
-        border: 2px solid blueviolet;
-        margin-bottom: 5%;
-    }
 }
