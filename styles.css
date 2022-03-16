@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+ 
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: columns;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: blue;
+    margin-bottom: auto;
+    width: 100vw;
+}
+
+
+
+
+footer {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    width: 100vw;
+    padding: 0.3rem;
+
+}
+form{ 
+    justify-self: right;
+}
+
+footer > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+footer > ul {
+    list-style: none;
+}
