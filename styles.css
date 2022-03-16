@@ -28,14 +28,14 @@ header{
 footer {
     background-color: blue;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     margin-top: auto;
     width: 100vw;
     padding: 0.3rem;
 
 }
-form{ 
-    justify-self: right;
+#flex_form{ 
+    justify-self: flex-end;
 }
 
 footer > form {
