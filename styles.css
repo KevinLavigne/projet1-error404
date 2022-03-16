@@ -17,26 +17,30 @@ body{
 }
 
 header{
-    background-color: blue;
+    background-color: lightblue;
     margin-bottom: auto;
-    width: 100vw;
+    width: 100%;
+}
+
+.carousel {
+ display: block;
+
 }
 
 
-
-
+div > p{
+    text-align: center;
+}
 footer {
-    background-color: blue;
+    background-color: lightblue;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     margin-top: auto;
-    width: 100vw;
+    width: 100%;
     padding: 0.3rem;
 
 }
-form{ 
-    justify-self: right;
-}
+
 
 footer > form {
     display: flex;
@@ -48,4 +52,61 @@ footer > form {
 
 footer > ul {
     list-style: none;
+}
+@media screen and (max-width: 768px) {
+    .carousel {
+        display: block;
+        margin: 5% 25%;
+        width: 50vw;
+        height: 50vh;
+       }
+       
+       .carousel-frame {
+           width: 50vw;
+           height: 35vh;
+           flex-direction: column;
+       }
+       div >iframe {
+           width: 50vw;
+           height: 25vh;
+       }
+       div > p{
+           width: 50vw;
+           height: 10vh;
+           text-align: center;
+       }   
+}
+
+@media screen and (min-width: 768px) {
+
+    .carousel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width : 100%;
+        grid-gap: 2% 2%;
+        margin: 5% 0;
+    }
+    .top12-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    div >iframe {
+        width: 20vw;
+        height: 10vh;
+        padding: 0;
+    }
+    div > p{
+        width: 20vw;
+        height: 10vh;
+        text-align: center;
+    }   
+    .carousel-frame {
+        width: 20vw ;
+        height: 20vh;
+        border: 2px solid blueviolet;
+        margin-bottom: 5%;
+    }
 }
