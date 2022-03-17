@@ -2,21 +2,22 @@
     margin: 0;
     box-sizing: border-box;
 }
-header > nav {
+
+header>nav {
     display: flex;
     justify-content: space-between;
     padding: 0.3rem;
- 
+
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     flex-direction: columns;
     flex-wrap: wrap;
 }
 
-header{
+header {
     background-color: blue;
     margin-bottom: auto;
     width: 100vw;
@@ -34,11 +35,12 @@ footer {
     padding: 0.3rem;
 
 }
-#flex_form{ 
+
+#flex_form {
     justify-self: flex-end;
 }
 
-footer > form {
+footer>form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,6 +48,96 @@ footer > form {
     padding: 0;
 }
 
-footer > ul {
+footer>ul {
     list-style: none;
 }
+
+h1 {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.div-contact-label {
+    display: flex;
+    justify-content: center;
+    padding: 0.50rem;
+    font-size: 1.5rem;
+    padding-bottom: 0;
+}
+
+.div-contact-input {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+
+}
+
+.div-contact-textarea {
+    width: 15rem;
+    border-radius: 0.5rem;
+    height: 8rem;
+    border: 1px solid grey;
+    margin-bottom: 1.5rem;
+
+}
+
+.div-contact-button {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 1.5rem;
+    border: 0px solid grey;
+    background-color: rgb(181, 225, 243);
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        display: flex;
+        align-items: center;
+        font-size: 4rem;
+    }
+
+    .div-contact-label {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .div-contact-input {
+        width: 35rem;
+        height: 3rem;
+
+    }
+
+    .div-contact-textarea {
+        width: 35rem;
+    }
+
+    .div-contact:last-child {
+        display: flex;
+        justify-content: flex-end;
+        width: 35rem;
+    }
+
+    .div-contact-button {
+        cursor: pointer;
+        padding: 1rem 3rem;
+    }
+
+    .div-contact-button:hover {
+            background-color: #4CAF50;
+            transition-duration: 0.4s;
+            color: white;
+        }
