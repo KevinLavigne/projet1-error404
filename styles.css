@@ -14,6 +14,8 @@ body{
     display: flex;
     flex-direction: columns;
     flex-wrap: wrap;
+    line-height: 1.5;
+    background-color: yellow;
 }
 
 header{
@@ -48,4 +50,68 @@ footer > form {
 
 footer > ul {
     list-style: none;
+}
+
+.info-main{
+    background-color: yellow;
+    height:min-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title{
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.info-article{
+    padding: 1rem 0;
+    
+}
+
+.info-article > h2{
+    text-align: center;
+}
+
+.info-article > p{
+    margin-top: 1rem;
+}
+
+.info-section > h2{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.info-section > table {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 1rem;
+    background-color: lightblue;
+    border-collapse: collapse; 
+    margin-bottom: 2rem;
+}
+
+table th, table td{
+    padding: 1rem;
+    border: 0.1rem solid black;
+    
+}
+table thead th {
+    border: 0.2rem solid black;
+    background-color: rosybrown;
+}
+@media screen and (min-width : 768px) {
+
+    .info-div-articles{
+        display: flex;
+    } 
+    .info-article{
+        padding: 5rem 5rem 10rem;
+        text-align: justify;
+    }
+
+    .info-table{
+        margin-bottom: 5rem;
+    }
+    
 }
