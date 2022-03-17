@@ -1,3 +1,13 @@
+:root {
+    --main-bg-color: whitesmoke;
+    --second-bg-color: blue;
+    --third-bg-color: yellow;
+    --main-text-color: black;
+    --second-text-color: red;
+    --main-dark-color: #000015;
+
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,29 +20,29 @@ header > nav {
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: columns;
     flex-wrap: wrap;
     line-height: 1.5;
-    background-color: yellow;
+    background-color: var(--main-bg-color);
 }
 
 header{
-    background-color: blue;
+    background-color: var(--second-bg-color);
     margin-bottom: auto;
-    width: 100vw;
+    width: 100%;
 }
 
 
 
 
 footer {
-    background-color: blue;
+    background-color: var(--second-bg-color);
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    width: 100vw;
+    width: 100%;
     padding: 0.3rem;
 
 }
@@ -53,7 +63,7 @@ footer > ul {
 }
 
 .info-main{
-    background-color: yellow;
+    background-color: var(--main-bg-color);
     height:min-content;
     display: flex;
     flex-direction: column;
@@ -65,8 +75,7 @@ footer > ul {
 }
 
 .info-article{
-    padding: 1rem 0;
-    
+    padding: 1rem 0;    
 }
 
 .info-article > h2{
@@ -75,43 +84,63 @@ footer > ul {
 
 .info-article > p{
     margin-top: 1rem;
+    padding: 0 2rem;
 }
 
 .info-section > h2{
     text-align: center;
-    padding-bottom: 2rem;
 }
 
 .info-section > table {
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 1rem;
-    background-color: lightblue;
+    background-color: var(--main-bg-color);
     border-collapse: collapse; 
-    margin-bottom: 2rem;
+    box-shadow: 0 0.25rem 0.75rem var(--main-dark-color);
+    border: 0.25rem solid var(--main-dark-color);
+    margin: 2rem;   
+    
 }
 
 table th, table td{
-    padding: 1rem;
-    border: 0.1rem solid black;
+    padding: 0.4rem;
+    
     
 }
 table thead th {
-    border: 0.2rem solid black;
-    background-color: rosybrown;
+    border: 0.2rem solid var(--main-dark-color);
+    background-color:var(--second-bg-color);
+    color: var(--main-dark-color);
+}
+tbody td {
+    border: 0.15rem solid #ddd;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f3f3f3;
 }
 @media screen and (min-width : 768px) {
 
     .info-div-articles{
         display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
     } 
     .info-article{
-        padding: 5rem 5rem 10rem;
         text-align: justify;
     }
 
     .info-table{
+        width: 90vw;
+    }
+
+    .info-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         margin-bottom: 5rem;
     }
     
+    .info-section > h2 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
