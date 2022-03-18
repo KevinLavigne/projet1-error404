@@ -4,7 +4,7 @@
 
     --main-bg-color: whitesmoke;
     --second-bg-color: blue;
-    --third-bg-color: yellow;
+    --third-bg-color: lightblue;
     --main-text-color: black;
     --second-text-color: red;
     --main-dark-color: #000015;
@@ -28,7 +28,7 @@ header > nav {
 }
 
 body{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: columns;
     flex-wrap: wrap;
@@ -164,3 +164,104 @@ tbody tr:nth-child(even){
 
     }
 }
+
+
+/*test burger*/
+
+.header-test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 0 1rem;
+    box-shadow: 0 0.25rem 0.75rem var(--main-dark-color);
+    height: 10vh;
+}
+
+.header-test ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header-burger-test svg{
+    stroke: var(--main-bg-color);
+    width: 15%;
+    height: 15%;
+}
+
+.header-burger-test{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav-test{
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: var(--third-bg-color);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 053s transform ease-in-out;
+  
+}
+
+.header-nav-test.open{
+    transform: initial;
+    display: flex;
+}
+
+.header-nav-links{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-test nav a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--main-dark-color);
+}
+.header-test li{
+    padding-bottom: 2rem;
+}
+
+.header-burger-close-test svg{
+    stroke: var(--main-bg-color);
+    width: 20%;
+    height: 20%;
+}
+
+.header-burger-close-test{
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 3;
+}
+
+.overlay-test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-dark-color);
+    display: none;
+
+}
+
+.overlay-test.open{
+    display: block;
+}
+
+/*
+sur PC faire display none pour header-burger-test 
+sur PC display une nav normale de PC
+sur PC header-burger-close-test en display none
+*/
