@@ -1,3 +1,5 @@
+/* DEBUT CODE CALVIN - PAGE CONTACT */
+
 :root {
     --font-title: 'Permanent Marker', cursive;
     --font-text: 'Roboto', sans-serif;
@@ -68,10 +70,6 @@ li>a {
 footer>ul {
     list-style: none;
 }
-
-
-.main-contact {}
-
 
 
 .h1-contact {
@@ -178,3 +176,5 @@ footer>ul {
         flex-direction: row;
         ;
     }
+
+    /* DEBUT CODE CALVIN - PAGE CONTACT */
