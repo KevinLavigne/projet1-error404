@@ -1,20 +1,4 @@
-:root {
 
-    /*Colors*/ 
-
-    --main-bg-color: whitesmoke;
-    --second-bg-color: blue;
-    --third-bg-color: lightblue;
-    --main-text-color: black;
-    --second-text-color: red;
-    --main-dark-color: #000015;
-
-     /*Font*/
-     
-     --main-font: example;  
-     --font-size: 1rem;
-
-}
 
 * {
     margin: 0;
