@@ -1,0 +1,469 @@
+:root {
+    --main-color: #E6E7E8;
+    ;
+    --secondary-color: #A6A6A6;
+    --light: rgb(241, 241, 241);
+    --dark: rgb(20, 20, 20);
+    ;
+
+    --main-font: 'Roboto', sans-serif;
+    --title-font: 'Permanent Marker', cursive;
+
+    --text-font-size: 1.3rem;
+}
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--light);
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: var(--light);
+    white-space: nowrap;
+    padding: 0 5%;
+}
+
+.flex-link {
+    display: flex;
+    justify-content: space-between;
+    width:12.5rem;
+}
+
+li{
+    list-style: none;
+    padding: 0 5%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.animated-text-container {
+    display: flex;
+    border: 2px solid black;
+    width: 70vh;
+    height: 30.5vh;
+    margin: 2vh 0;
+    flex-direction: column;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.glitched{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 24%;
+    font-size: 10vh;
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: -7px;
+  }
+  
+  .glitch{
+    animation: glitch 1s linear infinite;
+
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  .glitch:before,
+  .glitch:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  .glitch:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  .glitch:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+
+.animated-text {
+    color: var(--main-color);
+    font-family: 'Fira Code', monospace;
+    font-weight: 800;
+    font-size: 2.2vh;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 4s steps(40,end) forwards;
+}
+
+#delay-1{
+    animation-delay: 4s;
+}
+
+#delay-2{
+    animation-delay: 8s;
+}
+
+#delay-3{
+    animation-delay: 12s;
+}
+
+#delay-4{
+    animation-delay: 16s;
+}
+
+#delay-5{
+    animation-delay: 20s;
+}
+
+#delay-6{
+    animation-delay: 24s;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+        color: #DCDCDC;
+    }
+    20%{
+        border-right: 1px solid orange;
+        color: #D3D3D3;
+    }
+    40%{
+        border-right: 1px solid orange;
+        color: #C0C0C0;
+    }
+    60%{
+        border-right: 1px solid orange;
+        color: #A9A9A9;
+    }
+    80%{
+        border-right: 1px solid orange;
+        color: #696969;
+    }
+   100%{
+        border-right: none;
+        color: #000000;
+    }
+}
+.interactive-screen{
+    border: 2px solid black ;
+    width: 60vw;
+    height:33.75vw;
+    position: relative;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+}
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+    
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+  
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+    
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #f99;
+    counter-increment: item;
+  }
+  
+  .carousel__slide:nth-child(even) {
+    background-color: #99f;
+  }
+  
+  .carousel__slide:before {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+  
+
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+  
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 37.5%;
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+    left: -1rem;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+    right: -1rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background-color: #333;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+  }
+    
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    font-size: .8rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    text-decoration: none;
+    color: var(--light);
+    height: 8.1rem;
+}
+footer > h1{
+    width: 10rem;
+}
+
+footer ul,
+footer li {
+    margin: 0;
+}
+
+footer>ul {
+    list-style: none;
+    width: 10rem;
+    text-align: center;
+}
+
+footer>ul>li {
+    display: inline-block;
+}
+
+footer>ul>li>a {
+    color: var(--light);
+}
+
+footer > form {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    text-align: center;
+}
+form > button{
+    width: 50%;
+    align-self: center;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+}
+
