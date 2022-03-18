@@ -16,141 +16,130 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    line-height: 1, 5;
+    font-family: var(--title-font);
+    background-color: var(--main-color);
 
 }
 
-
-}
-
-
-.carousel {
- display: block;
-
-}
-
-@media screen and (max-width: 768px) {
-    .carousel {
-        display: block;
-        margin: 5% 25%;
-        width: 50vw;
-        height: 50vh;
-       }
-       
-       .carousel-frame {
-           width: 50vw;
-           height: 35vh;
-           flex-direction: column;
-       }
-       div >iframe {
-           width: 50vw;
-           height: 25vh;
-       }
-       div > p{
-           width: 50vw;
-           height: 10vh;
-           text-align: center;
-       }   
-}
-
-@media screen and (min-width: 768px) {
-
-.info-main{
-    background-color: var(--main-bg-color);
-    height:min-content;
+nav {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--light);
 }
 
-.info-title{
-    padding: 2rem 0 1rem 0;
+
+nav h1,
+nav ul {
+    margin: 0;
+}
+
+header {
     text-align: center;
+    background-color: white;
+    background-position: top;
+    background-size: cover;
+    min-height: 200px;
+    padding: .4rem;
+    margin-bottom: 2rem;
 }
 
-.info-article{
-    padding: 1rem 0;    
+header h1 {
+    font-size: 3rem;
+    color: var(--dark);
+    line-height: 200px;
+    height: 200px;
 }
 
-.info-article > h2{
+main {
+    display: flex;
+}
+
+
+section {
+    padding: .5rem;
     text-align: center;
+    color: var(--dark);
+    margin: 0 auto;
+    max-width: 65ch;
 }
 
-.info-article > p{
-    margin-top: 1rem;
-    padding: 0 2rem;
+
+p {
+    font-family: var(--main-font);
+    font-size: var(--text-font-size);
 }
 
-.info-section > h2{
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
+    background-color: var(--secondary-color);
+    font-size: .8rem;
+    padding: .8rem;
+    margin-top: 4rem;
+    text-decoration: none;
+    color: var(--light);
+    height: 8.1rem;
 }
 
-.info-section > table {
-    background-color: var(--main-bg-color);
-    border-collapse: collapse; 
-    box-shadow: 0 0.25rem 0.75rem var(--main-dark-color);
-    border: 0.25rem solid var(--main-dark-color);
-    margin: 2rem;   
-    
+footer ul,
+footer li {
+    margin: 0;
 }
 
-table th, table td{
-    padding: 0.4rem;
-    
-    
-}
-table thead th {
-    border: 0.2rem solid var(--main-dark-color);
-    background-color:var(--second-bg-color);
-    color: var(--main-dark-color);
-}
-tbody td {
-    border: 0.15rem solid #ddd;
+footer>ul {
+    list-style: none;
+
 }
 
-tbody tr:nth-child(even){
-    background-color: #f3f3f3;
+footer>ul>li {
+    display: inline-block;
+
 }
-@media screen and (min-width : 768px) {
 
-    .info-div-articles{
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 5rem;
-    } 
-    .info-article{
-        text-align: justify;
-    }
+footer>ul>li>a {
+    color: var(--light);
+}
 
-    .info-table{
-        width: 90%;
-    }
+.copyright {
+    width: 100%;
 
-    .info-table tbody tr{
-        transition: all .2s ease-in;
-        cursor: pointer;
-    }
+}
 
-    .info-section{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 5rem;
-    }
-    
-    .info-section > h2 {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
+nav>ul {
+    padding: 0;
+    margin-right: 1rem;
+    list-style: none;
+    font-size: 1.2rem;
 
-    tbody > tr:hover{
-        background-color: #f5f5f5;
-        transform: scale(1.02);
-        box-shadow: 0 0.25rem 0.75rem var(--main-dark-color);
+}
 
-    }
+nav>ul>li {
+    display: inline-block;
+
+}
+
+nav>ul>li>a {
+    padding: .25rem;
+    text-decoration: none;
+    color: var(--light);
+
 }
 
 
-/*test burger*/
+/*debut code de calvin */
 
 .header-test{
     display: flex;
@@ -203,8 +192,24 @@ tbody tr:nth-child(even){
     height: 8rem;
     border: 2px solid blueviolet;
     margin-bottom: 1.5rem;
+}
+
+.div-contact-button {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    color: white;
+    border: 0px solid blueviolet;
+    background-color: blueviolet;
+    font-family: var(--font-text);
+}
+
+/*  fin du code de calvin */
 
 
+/*  devut de code de Kevin */
     .top12-flex {
         display: flex;
         justify-content: center;
@@ -231,7 +236,7 @@ tbody tr:nth-child(even){
         padding-top: 37.5%; 
     }
 
-    div > img {
+    .top-img {
         position: absolute; 
         top: 0; 
         left: 0; 
@@ -240,33 +245,235 @@ tbody tr:nth-child(even){
         border: 0; 
     }
 
-    div > p{
+    .top-p{
         width: 100%;
         height: 10vh;
         text-align: center;
     }   
 
-body {
-    margin: 0;
-    line-height: 1, 5;
-    font-family: var(--title-font);
-    background-color: var(--main-color);
+/*  fin du code de Kevin */
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav h1,
+    nav ul {
+        margin-right: auto;
+
+    }
+
+    nav>ul>li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        line-height: 150px;
+        text-align: center;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    header h1 {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+/* debut code de calvin */
+
+    .h1-contact {
+       display: flex;
+        align-items: center;
+        font-size: 4rem;
+    }
+    
+    
+    .div-contact-label {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .div-contact-input {
+        width: 35rem;
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+    
+    .div-contact-textarea {
+        width: 35rem;
+       font-size: 1.25rem;
+    }
+    
+    .div-contact:last-child {
+        display: flex;
+        justify-content: flex-end;
+        width: 35rem;
+    }
+    
+    .div-contact-button {
+        cursor: pointer;
+        padding: 1rem 3rem;    
+    }
+    
+    .div-contact-button:hover {
+        background-color: blueviolet;
+        opacity: 75%;
+        transition-duration: 0.4s;
+        color: white;
+    }    
+
+/*  fin du code de calvin */
+
+/*  debut du code der Kevin*/
+
+    .carousel {
+        display: block;
+        margin: 5% 25%;
+        width: 50vw;
+        height: 50vh;
+       }
+           
+   .carousel-frame {
+       width: 50vw;
+       height: 35vh;
+       flex-direction: column;
+    }
+
+    .top-img {
+       width: 50vw;
+       height: 25vh;
+   }
+
+    .top-p{
+       width: 50vw;
+       height: 10vh;
+       text-align: center;
+    }   
+
+/* fin du code de kevin */
 
 }
+@media screen and (min-width: 768px) {
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--light);
+    nav {
+        display: flex;
+        margin: auto;
+    }
+
+    nav ul {
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+/*  debut du code de terry */
+
+    .info-main{
+        background-color: var(--main-bg-color);
+        height:min-content;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .info-title{
+        padding: 2rem 0 1rem 0;
+        text-align: center;
+    }
+    
+    .info-article{
+        padding: 1rem 0;    
+    }
+    
+    .info-article > h2{
+        text-align: center;
+    }
+    
+    .info-article > p{
+        margin-top: 1rem;
+        padding: 0 2rem;
+    }
+    
+    .info-section > h2{
+        text-align: center;
+    }
+    
+    .info-section > table {
+        background-color: var(--main-bg-color);
+        border-collapse: collapse; 
+        box-shadow: 0 0.25rem 0.75rem var(--main-dark-color);
+        border: 0.25rem solid var(--main-dark-color);
+        margin: 2rem;     
+    }
+
+    table th, table td{
+        padding: 0.4rem;   
+    }
+
+    table thead th {
+        border: 0.2rem solid var(--main-dark-color);
+        background-color:var(--second-bg-color);
+        color: var(--main-dark-color);
+    }
+
+    tbody td {
+        border: 0.15rem solid #ddd;
+    }
+    
+    tbody tr:nth-child(even){
+        background-color: #f3f3f3;
+    }
+
+    .info-div-articles{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+    
+    } 
+    .info-article{
+        text-align: justify;
+    }
+    
+    .info-table{
+       width: 90%;
+    }
+    
+    .info-table tbody tr{
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    .info-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+        
+    .info-section > h2 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    tbody > tr:hover{
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 0 0.25rem 0.75rem var(--main-dark-color);
+    }
+
+    /* fin du code de terry */
+
 }
-
-
-nav h1,
-nav ul {
-    margin: 0;
+    
+/*test burger
 
 .header-test ul {
     padding: 0;
@@ -354,213 +561,7 @@ nav ul {
 sur PC faire display none pour header-burger-test 
 sur PC display une nav normale de PC
 sur PC header-burger-close-test en display none
+
+
+    fin du test burger
 */
-
-
-nav>ul {
-    padding: 0;
-    margin-right: 1rem;
-    list-style: none;
-    font-size: 1.2rem;
-
-}
-
-nav>ul>li {
-    display: inline-block;
-
-}
-
-nav>ul>li>a {
-    padding: .25rem;
-    text-decoration: none;
-    color: var(--light);
-
-}
-
-header {
-    text-align: center;
-    background-color: white;
-    background-position: top;
-    background-size: cover;
-    min-height: 200px;
-    padding: .4rem;
-    margin-bottom: 2rem;
-}
-
-header h1 {
-    font-size: 3rem;
-    color: var(--dark);
-    line-height: 200px;
-    height: 200px;
-}
-
-main {
-    display: flex;
-}
-
-
-section {
-    padding: .5rem;
-    text-align: center;
-    color: var(--dark);
-    margin: 0 auto;
-    max-width: 65ch;
-}
-
-
-.div-contact-button {
-    display: flex;
-    justify-content: center;
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding: 0.75rem 1rem;
-    color: white;
-    border: 0px solid blueviolet;
-    background-color: blueviolet;
-    font-family: var(--font-text);
-}
-
-@media screen and (min-width: 768px) {
-    .h1-contact {
-        display: flex;
-        align-items: center;
-        font-size: 4rem;
-    }
-
-
-    .div-contact-label {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .div-contact-input {
-        width: 35rem;
-        height: 3rem;
-        font-size: 1.25rem;
-
-    }
-
-    .div-contact-textarea {
-        width: 35rem;
-        font-size: 1.25rem;
-
-    }
-
-    .div-contact:last-child {
-        display: flex;
-        justify-content: flex-end;
-        width: 35rem;
-    }
-
-    .div-contact-button {
-        cursor: pointer;
-        padding: 1rem 3rem;
-        
-    }
-
-    .div-contact-button:hover {
-        background-color: blueviolet;
-        opacity: 75%;
-        transition-duration: 0.4s;
-        color: white;
-    }
-
-
-
-
-
-p {
-    font-family: var(--main-font);
-    font-size: var(--text-font-size);
-}
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    background-color: var(--secondary-color);
-    font-size: .8rem;
-    padding: .8rem;
-    margin-top: 4rem;
-    text-decoration: none;
-    color: var(--light);
-    height: 5.1rem;
-}
-
-footer ul,
-footer li {
-    margin: 0;
-}
-
-footer>ul {
-    list-style: none;
-
-}
-
-footer>ul>li {
-    display: inline-block;
-
-}
-
-footer>ul>li>a {
-    color: var(--light);
-}
-
-.copyright {
-    width: 100%;
-
-}
-
-@media screen and (max-width: 600px) {
-    nav {
-        display: flex;
-        align-items: center;
-    }
-
-    nav h1,
-    nav ul {
-        margin-right: auto;
-
-    }
-
-    nav>ul>li {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header {
-        line-height: 150px;
-        text-align: center;
-
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-
-
-    }
-
-    header h1 {
-        vertical-align: middle;
-        display: inline-block;
-    }
-
-    @media screen and (min-width: 768px) {
-        nav {
-            display: flex;
-            margin: auto;
-        }
-
-        nav ul {
-            margin-left: auto;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-
-
-    }
-}
-
