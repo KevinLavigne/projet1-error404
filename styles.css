@@ -18,7 +18,7 @@ body{
 
 header{
     background-color: lightblue;
-    margin-bottom: auto;
+    height: 5vh;
     width: 100%;
 }
 
@@ -41,6 +41,9 @@ footer {
 
 }
 
+main {
+    background-color: blueviolet;
+}
 
 footer > form {
     display: flex;
@@ -97,14 +100,14 @@ footer > ul {
 
     .carousel-frame {
         width: 45vw;
-        border: 2px solid blueviolet;
+        border: 2px solid black;
         margin-bottom: 5%;
         position: relative; 
         overflow: hidden;
         padding-top: 37.5%; 
     }
 
-    div >iframe {
+    div > img {
         position: absolute; 
         top: 0; 
         left: 0; 
