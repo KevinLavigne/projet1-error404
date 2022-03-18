@@ -20,54 +20,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-header > nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.3rem;
- 
-}
 
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: columns;
-    flex-wrap: wrap;
-    line-height: 1.5;
-    background-color: var(--main-bg-color);
-}
-
-header{
-    background-color: var(--second-bg-color);
-    margin-bottom: auto;
-    width: 100%;
-}
-
-
-
-
-footer {
-    background-color: var(--second-bg-color);
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-    width: 100%;
-    padding: 0.3rem;
-
-}
-#flex_form{ 
-    justify-self: flex-end;
-}
-
-footer > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-footer > ul {
-    list-style: none;
 }
 
 .info-main{
