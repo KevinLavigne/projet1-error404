@@ -12,66 +12,6 @@
 }
 
 
-header>nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.3rem;
-
-}
-
-body {
-    height: 100vh;
-    display: flex;
-    flex-direction: columns;
-    flex-wrap: wrap;
-}
-
-header {
-    background-color: #8a2be2;
-    margin-bottom: auto;
-    width: 100vw;
-    font-family: var(--font-text);
-    color: white
-
-}
-
-footer {
-    background-color: #8a2be2;
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-    width: 100vw;
-    padding: 0.3rem;
-    font-family: var(--font-text);
-
-}
-
-form>label {
-    color: white
-}
-
-#flex_form {
-    justify-self: flex-end;
-}
-
-footer>form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-li>a {
-    color: white;
-    text-decoration: none;
-}
-
-footer>ul {
-    list-style: none;
-}
-
-
 .h1-contact {
     display: flex;
     width: 100vw;
@@ -169,12 +109,6 @@ footer>ul {
         opacity: 75%;
         transition-duration: 0.4s;
         color: white;
-    }
-
-    #flex_form {
-        display: flex;
-        flex-direction: row;
-        ;
     }
 
     /* FIN CODE CALVIN - PAGE CONTACT */
