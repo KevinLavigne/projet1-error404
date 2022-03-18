@@ -2,60 +2,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-header > nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.3rem;
- 
-}
-
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: columns;
-    flex-wrap: wrap;
-}
-
-header{
-    background-color: lightblue;
-    height: 5vh;
-    width: 100%;
-}
 
 .carousel {
  display: block;
 
 }
 
-
-div > p{
-    text-align: center;
-}
-footer {
-    background-color: lightblue;
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-    width: 100%;
-    padding: 0.3rem;
-
-}
-
-main {
-    background-color: blueviolet;
-}
-
-footer > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-footer > ul {
-    list-style: none;
-}
 @media screen and (max-width: 768px) {
     .carousel {
         display: block;
