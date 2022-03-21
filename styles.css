@@ -202,7 +202,8 @@ padding-bottom: 0.2rem;
         flex-wrap: wrap;
         justify-content: space-between;
         font-size: small;
-    }
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       }
 
     .footer-li{
         text-align: start;
@@ -609,9 +610,17 @@ nav>ul>li>a {
         margin: 0 3rem;
         background-color: #A6A6A6;
         border-radius: 1rem;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
-    
+
+    .info-article1{
+        margin-left: 7rem;
+        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    }
+    .info-article2{
+        margin-right: 7rem;
+        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+    }
     .info-table{
        width: 100%;
     }
@@ -626,6 +635,11 @@ nav>ul>li>a {
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 5rem;
+        padding: 2rem;
+
+        background-color: #A6A6A6;
+        border-radius: 1rem;
+        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
     }
         
     .info-section > h2 {
