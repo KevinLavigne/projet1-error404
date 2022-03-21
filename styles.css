@@ -210,46 +210,7 @@ nav>ul>li>a {
 
 
 /*  devut de code de Kevin */
-    .top12-flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
 
-
-    .carousel {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width : 100%;
-        gap: 2% 2%;
-        margin: 5% 0;
-    }
-
-    .carousel-frame {
-        width: 45vw;
-        border: 2px solid black;
-        margin-bottom: 5%;
-        position: relative; 
-        overflow: hidden;
-        padding-top: 37.5%; 
-    }
-
-    .top-img {
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        width: 100%; 
-        height: 80%; 
-        border: 0; 
-    }
-
-    .top-p{
-        width: 100%;
-        height: 10vh;
-        text-align: center;
-    }   
 
 /*  fin du code de Kevin */
 
@@ -341,29 +302,47 @@ nav>ul>li>a {
 
 /*  debut du code der Kevin*/
 
-    .carousel {
-        display: block;
-        margin: 5% 25%;
-        width: 50vw;
-        height: 50vh;
-       }
-           
-   .carousel-frame {
-       width: 50vw;
-       height: 35vh;
-       flex-direction: column;
-    }
+.top12-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
-    .top-img {
-       width: 50vw;
-       height: 25vh;
-   }
+#carousel {
+    display: flex;
+    justify-content: center;
 
-    .top-p{
-       width: 50vw;
-       height: 10vh;
-       text-align: center;
-    }   
+}
+
+.carousel-frame {
+    width: 100vw;
+    height: 15rem;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+    border: 0.25rem solid #f1f1f1;
+}
+
+.button-carousel {
+    position: absolute;
+
+}
+
+#d {
+    width: 3rem;
+    right: 0.5rem;
+    transform: rotate(0deg);
+
+
+}
+
+#g {
+    width: 3rem;
+    left: 0.5rem;
+    transform: rotate(180deg);
+}
+
 
 /* fin du code de kevin */
 
@@ -477,102 +456,59 @@ nav>ul>li>a {
 
     /* fin du code de terry */
 
+    /* debut du code de kevin*/
+
+    .top12-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+
+    .carousel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width : 100%;
+        gap: 2% 2%;
+        margin: 5% 0;
+    }
+
+    .carousel-frame {
+        width: 45vw;
+        border: 2px solid black;
+        margin-bottom: 5%;
+        position: relative; 
+        overflow: hidden;
+        padding-top: 37.5%; 
+    }
+
+    .top-img {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 75%; 
+        border: 0; 
+    }
+
+    .top-link{
+        text-align: center;
+        list-style: none;
+    }
+
+    .top-p{
+        width: 100%;
+        height: 8.5vh;
+        text-align: center;
+    }   
+
+    /* fin du code de kevin */
+
     /* debut code de marie */
 
 
 
     /* fiin du code de marry */
 }
-    
-/*test burger
-
-.header-test ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-
-.header-burger-test svg{
-    stroke: var(--main-bg-color);
-    width: 15%;
-    height: 15%;
-}
-
-.header-burger-test{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.header-nav-test{
-    position:fixed;
-    top: 0;
-    right: 0;
-    width: 60%;
-    height: 100vh;
-    background-color: var(--third-bg-color);
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transform: translateX(100%);
-    transition: 053s transform ease-in-out;
-  
-}
-
-.header-nav-test.open{
-    transform: initial;
-    display: flex;
-}
-
-.header-nav-links{
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.header-test nav a {
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: var(--main-dark-color);
-}
-.header-test li{
-    padding-bottom: 2rem;
-}
-
-.header-burger-close-test svg{
-    stroke: var(--main-bg-color);
-    width: 20%;
-    height: 20%;
-}
-
-.header-burger-close-test{
-   display: block;
-   position: absolute;
-   top: 0;
-   right: 0;
-   z-index: 3;
-}
-
-.overlay-test{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--main-dark-color);
-    display: none;
-
-}
-
-.overlay-test.open{
-    display: block;
-}
-
-/*
-sur PC faire display none pour header-burger-test 
-sur PC display une nav normale de PC
-sur PC header-burger-close-test en display none
-
-
-    fin du test burger
-*/
