@@ -290,65 +290,97 @@ nav>ul>li>a {
 }
 
 
-/*debut code de calvin */
+/* ---------------------------------------------------------------- START contact.html ---------------------------------------------------------------- */
 
-.header-test{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    padding: 0 1rem;
-    box-shadow: 0 0.25rem 0.75rem var(--main-dark-color);
-    height: 10vh;
-}
-
-
-.h1-contact {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-family: var(--font-title);
-
-}
-
-.form-contact {
+.contact-main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
 }
 
-.div-contact-label {
+.contact-main > *{
+    margin: 1rem 0;
+    padding: 0 ;
+
+}
+
+.contact-section *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: var(--text-font-size-mobile);
+    padding: var(--space-between-elements);
+    
+}
+
+
+.contact-h1 {
+    font-size: var(--title-h1-font-size-mobile);
+    font-family: var(--font-title);
+    background-color: var(--secondary-color);
+    color: var(--light);
+    padding: var(--space-between-blocks);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    
+}
+
+.contacts-choix-dons{
     display: flex;
     justify-content: center;
-    padding: 0.50rem;
-    font-size: 1.25rem;
-    font-weight: medium;
-    padding-bottom: 0;
+}
+
+.contacts-choix-dons > h3 {
+    margin: 3rem 1rem;
+    padding: 0.5rem 1rem;
+    width: 6.5rem;
+    border-radius: 0.6rem;
+    height: auto;
+    font-size: var(--title-h3-font-size-mobile);
+    background-color: var(--secondary-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.contacts-choix-dons >h3:active {
+    color: white;
+    background-color: blueviolet;
+}
+
+.contacts-choix-dons >h3:last-child{
+    color: white;
+    background-color: blueviolet;
+    
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contact-label {
+
     font-family: var(--font-text);
 }
 
-.div-contact-input {
-    width: 15rem;
+.contact-input {
+    width: 90%;
     height: 2rem;
     border: 2px solid blueviolet;
 
 }
 
-.div-contact-textarea {
-    width: 15rem;
+.contact-textarea {
+    width: 90%;
     height: 8rem;
     border: 2px solid blueviolet;
     margin-bottom: 1.5rem;
 }
 
-.div-contact-button {
-    display: flex;
-    justify-content: center;
-    font-size: 1.25rem;
+.contact-button {
     font-weight: bold;
     padding: 0.75rem 1rem;
     color: white;
@@ -357,7 +389,51 @@ nav>ul>li>a {
     font-family: var(--font-text);
 }
 
-/*  fin du code de calvin */
+/* START contact.html version web - Media Queries */
+
+@media screen and (min-width: 768px) {
+
+.contact-h1 {
+     font-size: 4rem;
+ }
+ 
+ 
+ .contact-label {
+     display: flex;
+     justify-content: flex-start;
+ }
+ 
+ .contact-input {
+     width: 35rem;
+     height: 3rem;
+     font-size: 1.25rem;
+ }
+ 
+ .contact-textarea {
+     width: 35rem;
+    font-size: 1.25rem;
+ }
+ 
+ .contact:last-child {
+     display: flex;
+     justify-content: flex-end;
+     width: 35rem;
+ }
+ 
+ .contact-button {
+     cursor: pointer;
+     padding: 1rem 3rem;    
+ }
+ 
+ .contact-button:hover {
+     background-color: blueviolet;
+     opacity: 75%;
+     transition-duration: 0.4s;
+     color: white;
+ }    
+}
+
+/* ---------------------------------------------------------------- END contact.html ---------------------------------------------------------------- */
 
 
 /*  devut de code de Kevin */
@@ -444,51 +520,6 @@ nav>ul>li>a {
         vertical-align: middle;
         display: inline-block;
     }
-
-/* debut code de calvin */
-
-    .h1-contact {
-       display: flex;
-        align-items: center;
-        font-size: 4rem;
-    }
-    
-    
-    .div-contact-label {
-        display: flex;
-        justify-content: flex-start;
-    }
-    
-    .div-contact-input {
-        width: 35rem;
-        height: 3rem;
-        font-size: 1.25rem;
-    }
-    
-    .div-contact-textarea {
-        width: 35rem;
-       font-size: 1.25rem;
-    }
-    
-    .div-contact:last-child {
-        display: flex;
-        justify-content: flex-end;
-        width: 35rem;
-    }
-    
-    .div-contact-button {
-        cursor: pointer;
-        padding: 1rem 3rem;    
-    }
-    
-    .div-contact-button:hover {
-        background-color: blueviolet;
-        opacity: 75%;
-        transition-duration: 0.4s;
-        color: white;
-    }    
-
-/*  fin du code de calvin */
 
 /*  debut du code der Kevin*/
 
