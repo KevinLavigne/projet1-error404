@@ -10,8 +10,15 @@
 
     --main-font: 'Roboto', sans-serif;
     --title-font: 'Permanent Marker', cursive;
-    --text-font-size: 1.3rem;
-    --title-font-size: 2rem;
+    
+    --text-font-size-desktop: 1.3rem;
+    --title-font-size-destop: 2rem;
+    
+    --text-font-size-mobile:0.9rem;
+    --title-h1-font-size-mobile:1.4rem;
+    --title-h2-font-size-mobile:1.05rem;
+    --title-h3-font-size-mobile:1rem;
+
 
     /* Spaces variables */
 
@@ -93,7 +100,7 @@ footer {
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 10% 40% 20% 20%;
     background-color: var(--secondary-color);
-    font-size: .8rem;
+    font-size: var(--text-font-size-mobile);
     padding: 0.8rem .8rem 0;
     margin-top: 2rem;
     text-decoration: none;
@@ -101,12 +108,16 @@ footer {
     font-family: var(--main-font);
 }
 
+footer h3{
+    font-size: var(--title-h3-font-size-mobile);
+}
+
 .footer-logo{
 grid-column: 1/2;
 grid-row: 1/3;
 font-family: 'permanent marker', cursive;
 color: var(--dark);
-font-size: 1rem;
+font-size: var(--title-h3-font-size-mobile);
 padding-bottom: 0.2rem;
 }
 
@@ -503,60 +514,62 @@ nav>ul>li>a {
        height: 10vh;
        text-align: center;
     }   
-
+}
 /* fin du code de kevin */
 
-}
-@media screen and (min-width: 768px) {
 
-    nav {
-        display: flex;
-        margin: auto;
-    }
 
-    nav ul {
-        margin-left: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-/*  debut du code de terry */
+/* ---------------------------------------------------------------- START info.html ---------------------------------------------------------------- */
 
     .info-main{
-        background-color: var(--main-bg-color);
+        background-color: var(--main-color);
         height:min-content;
         display: flex;
         flex-direction: column;
+        text-align: center;
+        font-size: var(--text-font-size-mobile);
     }
     
     .info-title{
-        padding: 2rem 0 1rem 0;
         text-align: center;
+        font-family: var(--title-font);
+        font-size: var(--title-h1-font-size-mobile);
     }
     
     .info-article{
-        padding: 1rem 0;    
+        padding: 1rem 1.5rem;    
     }
     
     .info-article > h2{
-        text-align: center;
+        text-align: start;
+        font-family: var(--font-title);
+        font-size: var(--title-h2-font-size-mobile);
     }
     
     .info-article > p{
-        margin-top: 1rem;
-        padding: 0 2rem;
+        margin-top: 2rem;
+        text-align: start;
+    }
+
+    .info-section{
+        max-width: 90vw;
     }
     
     .info-section > h2{
-        text-align: center;
+        text-align: start;
+        margin-bottom: 1.5rem;
+        padding-left: 1rem;
+        font-size: var(--title-h2-font-size-mobile);
+        font-family: var(--title-font);
     }
     
-    .info-section > table {
-        background-color: var(--main-bg-color);
+    .info-table {
+        background-color: var(--main-color);
         border-collapse: collapse; 
-        box-shadow: 0 0.25rem 0.75rem var(--main-dark-color);
-        border: 0.25rem solid var(--main-dark-color);
-        margin: 2rem;     
+        box-shadow: 0 0.25rem 0.75rem var(--dark);
+        border: 0.25rem solid var(--dark); 
+        font-size: 0.76rem;
+        font-family: var(--main-font);
     }
 
     table th, table td{
@@ -564,9 +577,9 @@ nav>ul>li>a {
     }
 
     table thead th {
-        border: 0.2rem solid var(--main-dark-color);
-        background-color:var(--second-bg-color);
-        color: var(--main-dark-color);
+        border: 0.2rem solid var(--dark);
+        background-color:var(--secondary-color);
+        color: var(--dark);
     }
 
     tbody td {
@@ -577,18 +590,30 @@ nav>ul>li>a {
         background-color: #f3f3f3;
     }
 
+    @media screen and (min-width:687px){
+      
     .info-div-articles{
         display: flex;
         justify-content: space-around;
         margin-bottom: 5rem;
-    
     } 
+    .info-title{
+        margin-bottom: 3rem;
+    }
+    .info-article h2{
+        text-align: center;
+       
+    }
+
     .info-article{
-        text-align: justify;
+        margin: 0 3rem;
+        background-color: #A6A6A6;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
     
     .info-table{
-       width: 90%;
+       width: 100%;
     }
     
     .info-table tbody tr{
@@ -605,21 +630,21 @@ nav>ul>li>a {
         
     .info-section > h2 {
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
     }
     
     tbody > tr:hover{
         background-color: #f5f5f5;
         transform: scale(1.02);
-        box-shadow: 0 0.25rem 0.75rem var(--main-dark-color);
+        box-shadow: 0 0.25rem 0.75rem var(--dark);
     }
+}
 
-    /* fin du code de terry */
+ /* ---------------------------------------------------------------- END info.html ---------------------------------------------------------------- */
 
     /* debut code de marie */
 
 
 
     /* fin du code de marry */
-}
-    
