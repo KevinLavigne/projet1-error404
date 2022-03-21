@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    background-color: #8a2be2;
+    background-color: #1B8191;
     margin-bottom: auto;
     width: 100vw;
     font-family: var(--font-text);
@@ -36,7 +36,7 @@ header {
 }
 
 footer {
-    background-color: #8a2be2;
+    background-color: #1B8191;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
@@ -102,14 +102,14 @@ footer>ul {
 .div-contact-input {
     width: 15rem;
     height: 2rem;
-    border: 2px solid blueviolet;
+    border: 2px solid #1B8191;
 
 }
 
 .div-contact-textarea {
     width: 15rem;
     height: 8rem;
-    border: 2px solid blueviolet;
+    border: 2px solid #1B8191;
     margin-bottom: 1.5rem;
 
 }
@@ -122,7 +122,7 @@ footer>ul {
     padding: 0.75rem 1rem;
     color: white;
     border: 0px solid blueviolet;
-    background-color: blueviolet;
+    background-color: #1B8191;
     font-family: var(--font-text);
 }
 
@@ -165,7 +165,7 @@ footer>ul {
     }
 
     .div-contact-button:hover {
-        background-color: blueviolet;
+        background-color: #1B8191;
         opacity: 75%;
         transition-duration: 0.4s;
         color: white;
