@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,300;1,100;1,400&display=swap"
         rel="stylesheet">
-    <script src="minigame.js"></script>
+    
 </head>
 <body>
     <header>
@@ -58,58 +58,60 @@
                         </tr>
                         <tr>
                             <td class="col-1">Dexterity :</td>
-                            <td class="col-2" id="dexterity"></td>
+                            <td class="col-2" id="dexterity">5</td>
                         </tr>
                         <tr>
                             <td class="col-1">Charisma :</td>
-                            <td class="col-2" id="charisma"></td>
+                            <td class="col-2" id="charisma">20</td>
                         </tr>
                         <tr>
                             <td class="col-1">Luck :</td>
-                            <td class="col-2" id="luck"></td>
+                            <td class="col-2" id="luck">-50</td>
                         </tr>
                         <tr>
                             <td class="col-1">Karma :</td>
-                            <td class="col-2" id="karma"></td>
+                            <td class="col-2" id="karma">50</td>
                         </tr>
                         <tr>
-                            <td class="col-1">damage :</td>
-                            <td class="col-2" id="damage"></td>
+                            <td class="col-1">Weapon Tier</td>
+                            <td class="col-2" id="weapon"></td>
                         </tr>
                         <tr>
-                            <td class="col-1">defence :</td>
-                            <td class="col-2" id="defence"></td>
+                            <td class="col-1">armor Tier</td>
+                            <td class="col-2" id="armory"></td>
                         </tr>
                         <tr>
-                            <td class="col-1">crit % :</td>
-                            <td class="col-2" id="crit%"></td>
+                            <td class="col-1">crit :</td>
+                            <td class="col-2" id="crit%">0%</td>
                         </tr>
                         <tr>
                             <td class="col-1">crit Dmg:</td>
-                            <td class="col-2" id="crit-mult%"></td>
+                            <td class="col-2" id="crit-mult%">150%</td>
                         </tr>
                         <tr>
-                            <td class="col-1">life steal % :</td>
-                            <td class="col-2" id="life-steal%"></td>
+                            <td class="col-1">life steal :</td>
+                            <td class="col-2" id="life-steal%">0%</td>
                         </tr>
                         <tr>
                             <td class="col-1">regen :</td>
-                            <td class="col-2" id="regen"></td>
+                            <td class="col-2" id="regen">0</td>
                         </tr>
                 </table>
             </div>
             <div class="interactive-screen-part" id="grid-item2-1">
                 <div class="hp-player">
-                    <p id="player-name">Momonga</p>
-                    <p>life point : <span id="player-max-hp"></span> / <span id="player-hp"></span></p>
+                    <p id="player_name">Momonga</p>
+                    <p> life : <span id="health"></span> / <span id="max-health"></span></p>
+                    <p> armor : <span id="defence"></span></p>
+                    <p> damage : <span id="damage"></span></p>
                 </div>
                 <div class="player-img"></div>
             </div>
             <div class="interactive-screen-part" id="grid-item2-2">
                 <div class="stats-ennemy">
-                    <p id="ennemy-name">test</p> 
-                    <p> life point : <span id="ennemy-hp">25</span> / <span id="ennemy-max-hp">25</span></p>
-                    <p> reduction damage : <span id="reduc-dmg">0</span> %</p>
+                    <p id="ennemy-name">10</p> 
+                    <p> life point : <span id="ennemy-hp"></span></p>
+                    <p> armor : <span id="armor"></span></p>
                 </div>
                 <div class="ennemy-img"></div>
                    
@@ -121,8 +123,6 @@
                     <p class="animated-text" id="game-text-1">aze</p>
                     <p class="animated-text" id="game-text-2">aze</p>
                     <p class="animated-text" id="game-text-3">aze</p>
-                    <p class="animated-text" id="game-text-4">aze</p> 
-                    <p class="animated-text" id="game-text-5">aze</p>
                 </h2>
                 <div class="flex-input">
                 <input type="button" class="option1" value="">
@@ -149,5 +149,6 @@
         <p class="copyright">Crew Name © 2022</p>
 
     </footer>
+    <script src="minigame.js"></script>
 </body>
 </html>

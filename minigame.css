@@ -214,7 +214,7 @@ main{
     filter: drop-shadow(0 0 10px #0003);
     display: grid;
     grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
-    grid-template-rows: 3fr 1.5fr;
+    grid-template-rows: 3.5fr 1fr;
 }
 #grid-item4{
     grid-column-start: 2;
@@ -233,9 +233,6 @@ main{
 }
 #game-text-4{
   animation-delay: 12s;
-}
-#game-text-5{
-  animation-delay: 16s;
 }
 
 #grid-item1 , #grid-item3{
@@ -276,6 +273,10 @@ table{
   width: 100%;
   border-collapse: collapse;
   font-size: 1.5vw;
+}
+p{
+  font-size: 1.5vw;
+  text-align: center;
 }
 th{
   text-align: center;
