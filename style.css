@@ -11,6 +11,9 @@
     --text-font-size-desktop: 1.3rem;
     --title-font-size-desktop: 2rem;
 
+  
+
+
     --text-font-size-mobile: 0.9rem;
     --title-h1-font-size-mobile: 1.4rem;
     --title-h2-font-size-mobile: 1.05rem;
@@ -375,6 +378,7 @@ tbody tr:nth-child(even) {
 /* ---------------------------------------------------------------- END info.html ---------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- START top.html ---------------------------------------------------------------- */
+
 @media screen and (max-width: 768px) {
     .top12-flex {
         display: flex;
