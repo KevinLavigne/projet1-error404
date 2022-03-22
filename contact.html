@@ -13,45 +13,121 @@
     <title>Page Contact</title>
 </head>
 
-<body>
+<body class="contact-body">
     <div class="menu-wrap">
         <nav>
-            <a href="#accueil" class="logo">Error 404</a>
+            <a href="acceuil.html" class="logo">Error 404</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
-                <li><a href="#info.html">A propos</a></li>
-                <li><a href="#top.html">Top 10</a></li>
-                <li><a href="#contact.html">Contact</a></li>
+                <li><a href="info.html">A propos</a></li>
+                <li><a href="top.html">Top 10</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
+    <img src="img-gif/merci.gif" alt="Messages de remerciements de nos donateurs et donatrices" class="contact-image-merci">
+    <main class="contact-main">
+
     
-    <main class="main-contact">
-        <h1 class="h1-contact">Contact</h1>
-        <form class="form-contact">
-        <div class="div-contact">
-          <label for="lastname" class="div-contact-label">Nom</label>
-          <input type="text" name="lastname" class="div-contact-input" id="lastname"/>
-        </div>
-        <div class="div-contact">
-          <label for="firstname" class="div-contact-label">Prénom</label>
-          <input type="text" name="firstname" class="div-contact-input" id="firstname" />
-        </div>
-        <div class="div-contact">
-          <label for="email" class="div-contact-label">Email</label>
-          <input type="email" name="email" class="div-contact-input" id="email" />
-        </div>
-        <div class="div-contact">
-          <label for="message" class="div-contact-label">Message</label>
-          <textarea name="message" class="div-contact-textarea" id="message"
-          ></textarea>
-        </div>
-        <div class="div-contact">
-          <button type="submit" class="div-contact-button">Envoyer</button>
-        </div>
-      </form>
-    </main>
+        <section class="contact-section-don">
+
+             <h1 class="contact-h1">Faire un don</h1>
+
+             
+             <div class="contact-choix-dons">
+               <h3>Je fais un don unique</h3>
+               <h3>Je fais un don mensuel</h3>
+             </div>
+
+             <div class="contact-choix-montant">
+              <label for="email"></label>
+              <input type="email" name="email" id="email" placeholder="Saisir le montant"/>
+              <p>€</p>
+            </div>
+
+            <p>Votre don ne vous coûte réellement que <span></span> après déduction fiscale.</p>
+
+
+        </section>
+
+        <section class="contact-section-information">
+          <h1 class="contact-h1">Informations</h1>
+            <form class="contact-form">
+
+               <div class="contact-div">
+                 <label for="lastname" class="contact-label">Nom</label>
+                 <input type="text" name="lastname" class="contact-input" id="lastname" placeholder="Julien*" required/>
+               </div>
+
+               <div class="contact-div">
+                 <label for="firstname" class="contact-label">Prénom</label>
+                 <input type="text" name="firstname" class="contact-input" id="firstname" placeholder="Richard*" required />
+               </div>
+
+               <div class="contact-div">
+                 <label for="email" class="contact-label">E-mail</label>
+                 <input type="email" name="email" class="contact-input" id="email" placeholder="julien.richard@thebest.fr*" required />
+               </div>
+
+               <div class="contact-div">
+                <label for="dateofbirth" class="contact-label">Date de naissance</label>
+                <input type="date" name="dateofbirth" class="contact-input" id="dateofbirth" required/>
+              </div>
+
+               <div class="contact-join">
+
+                <p>Souhaiter vous nous rejoindre ?</p>
+
+               <div class="contact-div">
+                <label for="benevolant" class="contact-label">Devenir Bénévole</label>
+                <input type="checkbox" name="benevolant" class="contact-input" id="benevolant" />
+              </div>
+
+              <div class="contact-div">
+                <label for="adherant" class="contact-label">Devenir Adhérant</label>
+                <input type="checkbox" name="adherant" class="contact-input" id="adherant" />
+              </div>
+
+            </div>
+
+               <p> * Ces informations sont indispensables pour bénéficier de votre réduction fiscale. </p>
+             </form>
+
+        </section>
+
+        <section class="contact-section-join">
+          <h1 class="contact-h1">Paiement</h1>
+
+              <p>Plateforme de paiement 100% sécurisée 🔒</p>
+            <form class="contact-form">
+
+               <div class="contact-div">
+                 <label for="cardnumber" class="contact-label">Numéro de carte bancaire</label>
+                 <input type="text" name="cardnumber" class="contact-input" id="cardnumber" placeholder="0000-0000-0000-0000" maxlength="16" required/>
+               </div>
+
+               <div class="contact-div contact-expiration-date">
+                 <label for="firstname" class="contact-label">Date d'expiration</label>
+                 <input type="text" name="firstname" class="contact-input" id="firstname" placeholder="Mois/Année" maxlength="5" required/>
+               </div>
+
+               <div class="contact-div">
+                <label for="CVV" class="contact-label">CVV</label>
+                <input type="text" name="CVV" class="contact-input" id="CVV" placeholder="123" maxlength="3" required/>
+              </div>
+
+               <div class="contact-div">
+                 <button type="submit" class="contact-button">Faire un don</button>
+               </div>
+
+             </form>
+             <a href="error404.html" class="contact-link-error404"><p>Devenir bénévole sans faire de don</p></a>
+        </section>
+
+        
+
+  </main>
     <footer>
         <h3 class="footer-logo">ERROR404</h3>
 
@@ -64,11 +140,9 @@
             <li class="footer-li"><a href="contact.html">Contact</a></li>
         </ul>
         <ul class="footer-ul">
-            <li class="footer-li">
-                <h3>Mobiliser</h3>
-            </li>
-            <li class="footer-li"><a href="info.html">Adhérer</a></li>
-            <li class="footer-li"><a href="top.html">Bénévolat</a></li>
+            <li class="footer-li"><h3>Mobiliser</h3></li>
+            <li class="footer-li"><a href="contact.html">Adhérer</a></li>
+            <li class="footer-li"><a href="contact.html">Bénévolat</a></li>
             <li class="footer-li"><a href="contact.html">Faire un don</a></li>
         </ul>
 
