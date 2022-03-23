@@ -41,6 +41,7 @@ nav {
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: relative;
     width: 100%;
+    
 
 }
 
@@ -164,6 +165,9 @@ header>h1 {
     font-size: 1.7rem;
 
 }
+
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -173,6 +177,7 @@ header>h1 {
     margin: auto;
    }
    
+   
   .typing{
     display: flex;
     overflow: hidden;
@@ -180,7 +185,7 @@ header>h1 {
     border-radius: 4px;
     white-space: nowrap;
     animation: 
-      typing 3s steps(75, end) forwards,
+      typing 2s steps(22, end) forwards,
       blinking 1.2s infinite;
       font-size: 3rem;
       width: 0;
@@ -574,9 +579,9 @@ tbody tr:nth-child(even) {
         vertical-align: middle;
         display: inline-block;
     }
-    
-    
 }
+    
+
 
 @media only screen and (min-width: 768px) {
     .menu-wrap {
