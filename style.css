@@ -9,7 +9,10 @@
 
     --text-font-size: 1.3rem;
     --text-font-size-desktop: 1.3rem;
-    --title-font-size-destop: 2rem;
+    --title-font-size-desktop: 2rem;
+
+  
+
 
     --text-font-size-mobile: 0.9rem;
     --title-h1-font-size-mobile: 1.4rem;
@@ -169,6 +172,7 @@ main {
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: var(--main-color);
 }
 
 section {
@@ -402,45 +406,154 @@ tbody tr:nth-child(even) {
 /* ---------------------------------------------------------------- END info.html ---------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------- START top.html ---------------------------------------------------------------- */
-.top12-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+
+@media screen and (max-width: 768px) {
+    .top12-flex {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .h1-top {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 0;
+        font-size: var(--title-h1-font-size-mobile);
+        font-family: var(--title-font);
+
+    }
+
+
+    #carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .image-carousel {
+        width: 90vw;
+        height: 15rem;
+        margin: 0;
+        display: inline-block;
+        background-size: cover;
+        border: 0.25rem solid #f1f1f1;
+    }
+
+    .button-carousel {
+        position: absolute;
+
+    }
+
+    #d {
+        width: 3rem;
+        right: 0.5rem;
+        transform: rotate(0deg);
+    }
+
+    #g {
+        width: 3rem;
+        left: 0.5rem;
+        transform: rotate(180deg);
+    }
+
+    .carousel-frame-all {
+        display: none;
+    }
+
 }
 
 
-.carousel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    gap: 2% 2%;
-    margin: 5% 0;
-}
+@media screen and (min-width: 768px) {
+    .carousel-frame-all {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 2% 2%;
+        margin: 5% 0;
 
-.carousel-frame {
-    width: 45vw;
-    border: 2px solid black;
-    margin-bottom: 5%;
-    position: relative;
-    overflow: hidden;
-    padding-top: 37.5%;
-}
+    }
 
-.top-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    border: 0;
-}
+    .h1-top {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        margin-bottom: 0;
+        font-family:  var(--title-font);
+        font-size: var(--title-font-size-desktop);
 
-.top-p {
-    width: 100%;
-    height: 10vh;
-    text-align: center;
+
+    }
+
+    .carousel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 2% 2%;
+        margin: 5% 0;
+    }
+
+    .carousel-frame {
+        width: 45vw;
+        border: 2px solid black;
+        margin-bottom: 5%;
+        position: relative;
+        overflow: hidden;
+        padding-top: 37.5%;
+    }
+
+    .top-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        border: 0;
+    }
+
+    .top-p {
+        width: 100%;
+        height: 10vh;
+        text-align: center;
+        font-family: var(--main-font);
+        font-size: var(--text-font-size-desktop);
+
+    }
+
+    #carousel {
+        display: none;
+
+    }
+
+    .image-carousel {
+        display: none;
+    }
+
+    .button-carousel {
+        display: none;
+
+    }
+
+    #d {
+        display: none;
+
+
+    }
+
+    #g {
+        display: none;
+    }
+
+
 }
 
 /* ---------------------------------------------------------------- END top.html ---------------------------------------------------------------- */
