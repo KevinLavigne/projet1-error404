@@ -266,7 +266,7 @@ footer h3 {
     height: auto;
 }
 
-.footer-socialmedia a{
+.footer-socialmedia a {
     text-decoration: none;
 }
 
@@ -340,12 +340,12 @@ footer h3 {
     padding: 1rem;
 }
 
-.info-article > h2 {
+.info-article>h2 {
     font-family: var(--font-title);
     font-size: var(--title-h2-font-size-mobile);
 }
 
-.info-article > p {
+.info-article>p {
     margin-top: 2rem;
     text-align: start;
 }
@@ -360,7 +360,7 @@ footer h3 {
     border: 0;
 }
 
-.info-section > h2 {
+.info-section>h2 {
     text-align: center;
     padding: 0.5rem 0;
     border-radius: 0.6rem 0.6rem;
@@ -368,8 +368,8 @@ footer h3 {
     font-family: var(--title-font);
     background-color: var(--secondary-color);
     border: 0.25rem solid var(--dark);
-    width: 90% ;
-    
+    width: 90%;
+
 }
 
 .info-table {
@@ -415,6 +415,7 @@ tbody tr:nth-child(even) {
         overflow: hidden;
         margin-top: 3rem;
         margin-bottom: 3rem;
+        background-color: white;
     }
 
     .h1-top {
@@ -443,11 +444,12 @@ tbody tr:nth-child(even) {
         display: inline-blfle;
         background-size: cover;
         border: 0.2rem solid var(--main-color);
+        object-fit: contain;
     }
 
     .button-carousel {
         position: absolute;
-        
+
     }
 
     #d {
@@ -489,10 +491,10 @@ tbody tr:nth-child(even) {
 
     .top-img-like {
         display: flex;
-        width:1.25rem;
+        width: 1.25rem;
         margin-left: 0;
         order: -1;
-        
+
     }
 
     #top-like-count {
@@ -500,7 +502,7 @@ tbody tr:nth-child(even) {
         font-size: var(--title-h3-font-size-mobile);
         font-family: var(--main-font);
         font-weight: bold;
-        
+
     }
 
     #top-like-text {
@@ -529,13 +531,14 @@ tbody tr:nth-child(even) {
     .h1-top {
         display: flex;
         width: 100vw;
+        height: 10vh;
         justify-content: center;
-        align-items: center;
-        margin-top: 5rem;
+        align-items: flex-end;
+        margin-top: 0;
         margin-bottom: 0;
         font-family: var(--title-font);
         font-size: var(--title-font-size-desktop);
-
+        background-color: var(--main-color); ;
 
     }
 
@@ -546,16 +549,58 @@ tbody tr:nth-child(even) {
         width: 100%;
         gap: 2% 2%;
         margin: 5% 0;
+        
     }
 
     .carousel-frame {
         width: 45vw;
-        border: 2px solid black;
         margin-bottom: 5%;
         position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
         overflow: hidden;
         padding-top: 37.5%;
+        
     }
+
+    .top-button-click {
+        display: flex;
+        background-color: var(--secondary-color);
+        position: absolute;
+        z-index: 1;
+        border: 0rem;
+        height: 4rem;
+        width: 12rem;
+        border-radius: 1rem;
+        font-size: var(--text-font-size-desktop);
+        font-family: var(--main-font);
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;  
+        color: var(--main-color); 
+        
+    }
+
+    .top-button-click:hover {
+        cursor: pointer;
+        color: white;
+        display: initial;
+        background-color: blueviolet;
+        transition: 0.5s ease;
+        opacity: 75%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        transition: all 0.3s ;
+        
+        
+    }
+
+    .top-button-click:active {
+        transform: scale(1.025);
+    }
+
 
     .top-img {
         position: absolute;
@@ -564,14 +609,19 @@ tbody tr:nth-child(even) {
         width: 100%;
         height: 80%;
         border: 0;
+        border-radius: 1rem;
+        object-fit: cover;
     }
 
     .top-p {
         width: 100%;
         height: 10vh;
+        display: flex;
+        align-items: flex-start;
         text-align: center;
         font-family: var(--main-font);
         font-size: var(--text-font-size-desktop);
+        justify-content: center;
 
     }
 
@@ -592,7 +642,6 @@ tbody tr:nth-child(even) {
     #d {
         display: none;
 
-
     }
 
     #g {
@@ -609,13 +658,15 @@ tbody tr:nth-child(even) {
 
 /* ---------------------------------------------------------------- START contact.html ---------------------------------------------------------------- */
 
-.contact-image-merci{
+.contact-image-merci {
     max-width: 100%;
 }
-.contact-body{
+
+.contact-body {
     background-color: var(--secondary-color);
 }
-.contact.header{
+
+.contact.header {
     padding-bottom: 5rem;
     background-color: var(--main-color);
 }
@@ -626,16 +677,16 @@ tbody tr:nth-child(even) {
     background-color: var(--main-color);
 }
 
-.contact-main > *{
+.contact-main>* {
     margin: 0;
-    padding: 0 ;
-    border:0;
+    padding: 0;
+    border: 0;
     border-radius: 0;
     background-color: var(--main-color);
 
 }
 
-.contact-section *{
+.contact-section * {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -644,7 +695,7 @@ tbody tr:nth-child(even) {
     font-size: var(--text-font-size-mobile);
     padding: var(--space-between-elements);
     border: 0;
-    
+
 }
 
 
@@ -658,18 +709,18 @@ tbody tr:nth-child(even) {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-    
+
 }
 
 /** Section faire un don **/
 
-.contact-choix-dons{
+.contact-choix-dons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-choix-dons > h3 {
+.contact-choix-dons>h3 {
     margin: 2rem 1rem;
     padding: 0.5rem 0.5rem;
     width: 7rem;
@@ -681,18 +732,18 @@ tbody tr:nth-child(even) {
 }
 
 
-.contact-choix-dons >h3:active {
+.contact-choix-dons>h3:active {
     color: white;
     background-color: blueviolet;
 }
 
-.contact-choix-dons >h3:last-child{
+.contact-choix-dons>h3:last-child {
     color: white;
     background-color: blueviolet;
-    
+
 }
 
-.contact-choix-montant{
+.contact-choix-montant {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -700,7 +751,8 @@ tbody tr:nth-child(even) {
     margin-bottom: 3rem;
 
 }
-.contact-choix-montant input{
+
+.contact-choix-montant input {
     width: 70%;
     height: 3rem;
     font-size: large;
@@ -710,33 +762,34 @@ tbody tr:nth-child(even) {
     border-radius: 0.6rem 0 0 0.6rem;
 }
 
-.contact-choix-montant input::placeholder{
+.contact-choix-montant input::placeholder {
     text-align: center;
     font-size: large;
 }
 
-.contact-choix-montant p{
+.contact-choix-montant p {
     background-color: var(--secondary-color);
     padding: 1rem 1rem;
     margin: 0;
     font-weight: bold;
-    border-radius: 0 0.6rem 0.6rem 0 ;
+    border-radius: 0 0.6rem 0.6rem 0;
 }
 
 /** fin de section faire un don **/
 
 /** début de section information **/
 
-.contact-form{
+.contact-form {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     padding: 1rem;
 }
-.contact-form *{
-   margin: 0.4rem 0;
-   border-radius: 0.6rem;
+
+.contact-form * {
+    margin: 0.4rem 0;
+    border-radius: 0.6rem;
 }
 
 .contact-label {
@@ -759,7 +812,7 @@ tbody tr:nth-child(even) {
 
 .contact-join p {
     width: 100%;
-    
+
 }
 
 .contact-div {
@@ -775,13 +828,14 @@ tbody tr:nth-child(even) {
     align-items: center;
     justify-content: space-between;
 }
+
 .contact-div input::placeholder {
     text-align: center;
     font-size: large;
 
 }
 
-.contact-join label{
+.contact-join label {
     width: 60%;
 }
 
@@ -789,6 +843,7 @@ tbody tr:nth-child(even) {
     width: 30%;
     margin-left: 2rem;
 }
+
 .contact-textarea {
     width: 90%;
     height: 8rem;
@@ -803,10 +858,11 @@ tbody tr:nth-child(even) {
     font-family: var(--font-text);
 }
 
-.contact-link-error404{
-    text-decoration:none;
+.contact-link-error404 {
+    text-decoration: none;
     color: var(--dark);
 }
+
 /* Fin de section d'information*/
 
 
@@ -814,17 +870,18 @@ tbody tr:nth-child(even) {
 
 @media screen and (min-width: 768px) {
 
-    .contact-image-merci{
+    .contact-image-merci {
         width: 100%;
     }
-    .contact-main{
+
+    .contact-main {
         flex-direction: row;
         justify-content: space-around;
         padding: 3rem 0;
     }
 
-    .contact-main > section {
-        
+    .contact-main>section {
+
         width: 25%;
         height: fit-content;
         background-color: var(--secondary-color);
@@ -846,7 +903,7 @@ tbody tr:nth-child(even) {
         justify-content: center;
     }
 
-    .contact-section-information .contact-join .contact-div{
+    .contact-section-information .contact-join .contact-div {
         flex-direction: row;
     }
 
@@ -855,7 +912,7 @@ tbody tr:nth-child(even) {
         color: var(--dark);
     }
 
-    .contact-choix-dons > h3 {
+    .contact-choix-dons>h3 {
         align-self: center;
         text-align: center;
         justify-content: center;
@@ -865,7 +922,7 @@ tbody tr:nth-child(even) {
         background-color: blueviolet;
     }
 
-    .contact-link-error404{
+    .contact-link-error404 {
         color: var(--light);
     }
 
