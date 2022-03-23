@@ -31,7 +31,7 @@ d.onclick = function () {
 }
 
 function displayHidden() {
-    if (p == -nbr +6)
+    if (p == -nbr +7)
         g.style.visibility = "hidden";
     else
         g.style.visibility = "visible";
