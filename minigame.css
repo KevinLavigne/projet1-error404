@@ -1,7 +1,7 @@
 :root {
-    --main-color: #E6E7E8;
+    --main-color: #b0d3f7;
     ;
-    --secondary-color: #A6A6A6;
+    --secondary-color: #C0C0C0;
     --light: rgb(241, 241, 241);
     --dark: rgb(20, 20, 20);
     ;
@@ -24,33 +24,6 @@ body{
     flex-direction: column;
   }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--light);
-}
-
-nav>ul>li>a {
-    text-decoration: none;
-    color: var(--light);
-    white-space: nowrap;
-    padding: 0 5%;
-}
-
-.flex-link {
-    display: flex;
-    justify-content: space-between;
-    width:12.5rem;
-}
-
-li{
-    list-style: none;
-    padding: 0 5%;
-}
-
 main{
     display: flex;
     justify-content: center;
@@ -61,10 +34,12 @@ main{
 .animated-text-container {
     display: flex;
     border: 2px solid black;
-    width: 70vh;
-    height: 30.5vh;
+    width: 50vw;
+    height: 25vw;
     margin: 2vh 0;
     flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
 }
 
 .container{
@@ -73,13 +48,15 @@ main{
     margin-right: auto;
     text-align: center;
 }
-
+.container > p{
+  font-size: 1.9vw;
+}
 .glitched{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 24%;
-    font-size: 10vh;
+    font-size: 8vw;
     font-family: 'Fira Mono', monospace;
     letter-spacing: -7px;
   }
@@ -145,46 +122,45 @@ main{
   }
 
 .animated-text {
-    color: var(--main-color);
-    font-family: 'Fira Code', monospace;
+    color: var(--secondary-color);
+    font-family: var(--main-font);
     font-weight: 800;
     font-size: 1.1vw;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    height: 1.1vw;
-    animation: type 4s steps(40,end) forwards;
+    animation: type 3s steps(40,end) forwards;
 }
 
 #delay-1{
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 
 #delay-2{
-    animation-delay: 8s;
+    animation-delay: 6s;
 }
 
 #delay-3{
-    animation-delay: 12s;
+    animation-delay: 9s;
 }
 
 #delay-4{
-    animation-delay: 16s;
+    animation-delay: 12s;
 }
 
 #delay-5{
-    animation-delay: 20s;
+    animation-delay: 15s;
 }
 
 #delay-6{
-    animation-delay: 24s;
+    animation-delay: 18s;
 }
 
 @keyframes type {
     0% {
         width: 0;
-        color: #E6E7E8;
+        color:var(--main-color);
     }
     20%{
         border-right: 1px solid orange;
@@ -208,45 +184,54 @@ main{
     }
 }
 .interactive-screen{
-    border: 2px solid black ;
+    border: 1px solid black ;
     width: 60vw;
-    height:33.75vw;
-    position: relative;
-    filter: drop-shadow(0 0 10px #0003);
+    height:35vw;
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: 1fr 2fr 2fr ;
-    grid-template-rows: 3.5fr 1fr;
+    grid-template-rows: 3.5fr 1.5fr;
+    background-color: var(--secondary-color);
+    margin-bottom: 2vh;
+    border-radius: 27px;
 }
 #grid-item4{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    width: 100%;
+    border-bottom-right-radius: 25px;
+    border-collapse: collapse;
 }
 /*#game-text-1{
 
 }*/
+
+
 #game-text-2{
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 #game-text-3{
-  animation-delay: 8s;
+  animation-delay: 6s;
 }
-#game-text-4{
-  animation-delay: 12s;
-}
+
 
 #grid-item1 {
   grid-row-start: 1;
   grid-row-end: 4;
-
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-collapse: collapse;
 }
 #grid-item2-1{
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
-  border: 0px;
+  border-collapse: collapse;
+  border-left: #000000 solid 1px;
+  border-right: #000000 solid 1px;
 }
 #grid-item2-2{
 grid-row-start: 1;
@@ -254,26 +239,49 @@ grid-row-end: 2;
 grid-column-start: 3;
 grid-column-end: 4;
 border: 0px;
+border-collapse: collapse;
+border: #000000 solid 1px;
+border-top-right-radius: 25px;
+}
+
+#ennemy-img{
+  width: 23.75vw;
+  height: 18.3vw;
+}
+#player-img{
+  position: relative;
+  left: 2vw;
+  width: 20vw;
+  height: 18.3vw;
 }
 #player-name, #ennemy-name{
   text-align: center;
-  padding: 0 10%;
 }
 
 .stats-ennemy , .hp-player {
-  height: 30%;
-  border: #000000 solid 1px;
+  height: 8vW;
+  border-bottom: #000000 solid 1px;
 }
-.stats-ennemy > p , .hp-player > p {
- padding: 0 5%;
+.stats-ennemy{
+  border-top-right-radius: 25px;
+}
+
+.flex-reward-text{
+  display: flex;
+  justify-content: center;
+}
+#reward-text{
+  width: 15vw;
 }
 
 table{
-  border: #000000 1px solid;
   text-align: center;
   width: 100%;
   border-collapse: collapse;
   font-size: 1.5vw;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-spacing: 0;
 }
 p{
   font-size: 1.5vw;
@@ -285,17 +293,20 @@ th{
 tr{
   margin: 0;
   padding: 0;
-  height: 2.57vw;
+  height: 2.68vw;
 }
 .col-1{
   width: 70%;
-  border: #000000 solid;
+  border-bottom: #000000 solid 1px;
+  border-right: #000000 solid 1px;
 }
 .col-2{
   width: 30%;
-  border: #000000 solid;
+  border-bottom: #000000 solid 1px ;
 }
-
+#border-top-left{
+  border-top-left-radius: 25px;
+}
 .flex-input {
   display: flex;
   justify-content: space-evenly;
@@ -304,69 +315,25 @@ tr{
 
 .game-input {
   width: 18%;
-  position: relative;
-  top: 3vh
+  margin: .5vw 0 ;
 }
+
 .fight-input{
   position: relative;
   bottom: 4.15vw;
   left: 20.25vw;
   width: 30%;
+  height: 2vw;
+  font: var(--title-font);
+  border-radius: 10px;
+  background-color: rgb(96, 166, 200);
+  background-image: linear-gradient(to top left,
+  rgba(0, 0, 0, .2),
+  rgba(0, 0, 0, .2) 30%,
+  rgba(0, 0, 0, 0));;
 }
 
 .interactive-screen-part{
   border: #000000 solid 1px;
 }
     
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary-color);
-    font-size: .8rem;
-    padding: 1rem;
-    margin-top: 4rem;
-    text-decoration: none;
-    color: var(--light);
-    height: 8.1rem;
-}
-footer > h1{
-    width: 10rem;
-}
-
-footer ul,
-footer li {
-    margin: 0;
-}
-
-footer>ul {
-    list-style: none;
-    width: 10rem;
-    text-align: center;
-}
-
-footer>ul>li {
-    display: inline-block;
-}
-
-footer>ul>li>a {
-    color: var(--light);
-}
-
-footer > form {
-    display: flex;
-    flex-direction: column;
-    width: 10rem;
-    text-align: center;
-}
-form > button{
-    width: 50%;
-    align-self: center;
-}
-
-.copyright {
-    width: 100%;
-    text-align: center;
-}
-

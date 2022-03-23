@@ -13,41 +13,31 @@
     
 </head>
 <body>
-    <header>
-        <nav>
-            <h1 >Error 404</h1>
-            <ul class="flex-link">
-                <li><a href="#a-propos">A propos</a></li>
-                <li><a href="#top20">Top20</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <section class="animated-text-container">
-            <h1 class="glitched">
-                <div class="glitch" title="404">404</div>
-                </h1>
-            <h2 class="container">
-                <p class="animated-text">there is no website, my webdev never finished his</p>
-                <p class="animated-text" id="delay-1">work sorry for this issue he just let this small</p>
-                <p class="animated-text" id="delay-2">non-website minigame but you have no reason to lose</p>
-                <p class="animated-text" id="delay-3">your time here, it's surely better to go on all this</p>
-                <p class="animated-text" id="delay-4"> non-boomer website u know like facebook, tiktok,</p>
-                <p class="animated-text" id="delay-5">snapchat, twitter or again msn. euh wait you don't</p>
-                <p class="animated-text" id="delay-6">know msn oh i see, i'm surely become a boomer ...</p>
-            </h2>
+            <h2 class="glitched">
+                <span class="glitch" title="404">404</span>
+                </h2>
+            <div class="container">
+                <p class="animated-text">there is no website, my webdev never finished his work</p>
+                <p class="animated-text" id="delay-1">sorry for this issue he just let this small non-website</p>
+                <p class="animated-text" id="delay-2">minigame but you have no reason to lose your time here,</p>
+                <p class="animated-text" id="delay-3">it's surely better to go on all this non-boomer website</p>
+                <p class="animated-text" id="delay-4">u know like facebook, tiktok, snapchat, twitter or again</p>
+                <p class="animated-text" id="delay-5">msn. Wait you don't know it oh i see, i become a boomer ...</p>
+                <p class="animated-text" id="delay-6"></p>
+            </div>
         </section>
 
         <section class="interactive-screen">
             <div class="interactive-screen-part" id="grid-item1">
                 <table>
                     <thead>
-                        <tr>
+                        <tr id="border-top-left">
                             <th scope="col" colspan="2">Momonga :</th>
                         </tr>
                     </thead>
-                    
+                    <tbody class="table-body">
                         <tr>
                             <td class="col-1">Strenght :</td>
                             <td class="col-2" id="strength"></td>
@@ -93,9 +83,10 @@
                             <td class="col-2" id="life-steal%">0%</td>
                         </tr>
                         <tr>
-                            <td class="col-1">regen :</td>
-                            <td class="col-2" id="regen">0</td>
+                            <td id='bottom-table'>regen :</td>
+                            <td id="regen">0</td>
                         </tr>
+                    </tbody>
                 </table>
             </div>
             <div class="interactive-screen-part" id="grid-item2-1">
@@ -104,9 +95,9 @@
                     <p> life : <span id="health"></span> / <span id="max-health"></span></p>
                     <p> armor : <span id="defence"></span></p>
                     <p> damage : <span id="damage"></span></p>
-                    <input type="submit" class="fight-input" id="fight-option" value="">
+                    <button type="button" class="fight-input" id="fight-option"></button>
                 </div>
-                <div class="player-img"></div>
+                <img id="player-img" src="minigameImg/Momonga.jpg" alt="your character"/>
             </div>
             <div class="interactive-screen-part" id="grid-item2-2">
                 <div class="stats-ennemy">
@@ -115,43 +106,28 @@
                     <p> armor : <span id="armor"></span></p>
                     <p> damage : <span id="damageEnnemy"></span></p>
                 </div>
-                <div class="ennemy-img"></div>
-                   
+                <img id="ennemy-img" src="minigameImg/wolf.jpg" alt="your ennemy"/>
             </div>
                 
 
             <div class="interactive-screen-part" id="grid-item4">
-                <h2>
+                <div>
                     <p class="animated-text" id="game-text-1"></p>
                     <p class="animated-text" id="game-text-2"></p>
                     <p class="animated-text" id="game-text-3"></p>
-                </h2>
+                </div>
                 <div class="flex-input">
                 <input type="submit" class="game-input" id="option1" value="">
                 <input type="submit" class="game-input" id="option2" value="">
                 <input type="submit" class="game-input" id="option3" value="">
-
+                </div>
+                <div class="flex-reward-text">
+                <h2 class="animated-text" id="reward-text"></h2>
                 </div>
                 </div>
-
+                
         </section>
     </main>
-    <footer>
-        <h1>Error 404</h1>
-        <ul>
-            <li><a href="">A propos</a></li>
-            <li><a href="">Top20</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        <form>
-            <label for="email">Newsletter:</label>
-            <input type="email" id="email" name="email">
-            <button type="submit">Souscrire</button>
-        </form>
-
-        <p class="copyright">Crew Name © 2022</p>
-
-    </footer>
     <script src="minigame.js"></script>
 </body>
 </html>
