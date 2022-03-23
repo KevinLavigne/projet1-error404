@@ -181,8 +181,6 @@ section {
     padding: .5rem;
     text-align: center;
     color: black;
-    margin: 2rem;
-    max-width: 65ch;
     background-color: rgb(245, 245, 245);
     border-style: solid;
     border-color: rgb(245, 245, 245);
@@ -566,6 +564,7 @@ tbody tr:nth-child(even) {
 .contact-body{
     background-color: var(--secondary-color);
 }
+
 .contact.header{
     padding-bottom: 5rem;
     background-color: var(--main-color);
@@ -574,6 +573,8 @@ tbody tr:nth-child(even) {
 .contact-main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--main-color);
 }
 
@@ -583,8 +584,9 @@ tbody tr:nth-child(even) {
     border:0;
     border-radius: 0;
     background-color: var(--main-color);
-
+    width: 100%;
 }
+
 
 .contact-section *{
     display: flex;
@@ -594,8 +596,7 @@ tbody tr:nth-child(even) {
     text-align: center;
     font-size: var(--text-font-size-mobile);
     padding: var(--space-between-elements);
-    border: 0;
-    
+    border: 0;    
 }
 
 
@@ -606,9 +607,7 @@ tbody tr:nth-child(even) {
     color: var(--light);
     padding: var(--space-between-blocks);
     margin-top: 0;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;   
 }
 
 /** Section faire un don **/
@@ -686,6 +685,10 @@ tbody tr:nth-child(even) {
 .contact-form *{
    margin: 0.4rem 0;
    border-radius: 0.6rem;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
 }
 
 .contact-label {
@@ -713,8 +716,10 @@ tbody tr:nth-child(even) {
 
 .contact-join .contact-div {
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 .contact-div input::placeholder {
     text-align: center;
@@ -736,6 +741,9 @@ tbody tr:nth-child(even) {
     margin-bottom: 1.5rem;
 }
 
+.contact-section-join {
+    width: 100%;
+}
 .contact-button {
     font-weight: bold;
     padding: 0.75rem 1rem;
@@ -760,6 +768,7 @@ tbody tr:nth-child(even) {
     }
     .contact-main{
         flex-direction: row;
+        align-items: flex-start;
         justify-content: space-around;
         padding: 3rem 0;
     }
@@ -790,6 +799,8 @@ tbody tr:nth-child(even) {
     .contact-section-information .contact-join .contact-div{
         flex-direction: row;
     }
+
+    
 
     .contact-choix-montant p {
         background-color: var(--main-color);
