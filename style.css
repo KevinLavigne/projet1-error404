@@ -150,11 +150,11 @@ nav .menu-btn:checked~.menu-icon:not(.steps) .nav-icon:after {
 
 
 header {
-    height: 400px;
-    line-height: 400px;
-    text-align: center;
-    background: rgb(228, 228, 228);
-    margin-bottom: 1rem;
+    display: flex;
+    background-color: var(--main-color);
+    min-height: 300px;
+    padding: .4rem;
+    margin-bottom: 2rem;
 }
 
 header>h1 {
@@ -164,6 +164,35 @@ header>h1 {
     font-size: 1.7rem;
 
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    
+    margin: auto;
+   }
+   
+  .typing{
+    display: flex;
+    overflow: hidden;
+    border-right: .50em solid orange;
+    border-radius: 4px;
+    white-space: nowrap;
+    animation: 
+      typing 3s steps(75, end) forwards,
+      blinking 1.2s infinite;
+      font-size: 3rem;
+      width: 0;
+  }
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+  }
+  @keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: rgb(253, 111, 29); }
+  }
 
 main {
     display: flex;
@@ -533,7 +562,6 @@ tbody tr:nth-child(even) {
 
     header {
         height: 400px;
-        line-height: 400px;
         text-align: center;
     }
 
@@ -542,10 +570,12 @@ tbody tr:nth-child(even) {
         flex-direction: column;
     }
 
-    header h1 {
+    header>h1 {
         vertical-align: middle;
         display: inline-block;
     }
+    
+    
 }
 
 @media only screen and (min-width: 768px) {
@@ -713,4 +743,4 @@ tbody tr:nth-child(even) {
         width: 100%;
         padding-bottom: 0.5rem;
     }
-}
+} 
