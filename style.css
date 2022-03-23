@@ -606,6 +606,7 @@ tbody tr:nth-child(even) {
     color: var(--light);
     padding: var(--space-between-blocks);
     margin-top: 0;
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
     
@@ -680,6 +681,7 @@ tbody tr:nth-child(even) {
 .contact-form{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     padding: 1rem;
 }
@@ -711,8 +713,16 @@ tbody tr:nth-child(even) {
     
 }
 
+.contact-div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .contact-join .contact-div {
     display: flex;
+    flex-flow: nowrap row;
     align-items: center;
     justify-content: space-between;
 }
