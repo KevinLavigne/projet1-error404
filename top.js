@@ -1,5 +1,5 @@
 document.body.onload = function () {
-    nbr = 5;
+    nbr = 11;
     p = 0;
     carousel = document.getElementById("carousel");
     g = document.getElementById("g");
@@ -8,14 +8,14 @@ document.body.onload = function () {
     for (i = 1; i <= nbr; i++) {
         div = document.createElement("div");
         div.className = "image-carousel";
-        div.style.backgroundImage = "url('images/im" + i + ".jpg')";
+        div.style.backgroundImage = "url('images/im" + i + ".gif')";
         carousel.appendChild(div);
     }
     displayHidden();
 
 }
 g.onclick = function () {
-    if (p > -nbr + 3);
+    if (p > -nbr + 6);
         p--;
     carousel.style.transform = "translate(" + p * 90 + "vw)";
     carousel.style.transition = "all 0.5s ease";
@@ -23,7 +23,7 @@ g.onclick = function () {
 }
 
 d.onclick = function () {
-    if (p < 2);
+    if (p < 5);
         p++;
     carousel.style.transform = "translate(" + p * 90 + "vw)";
     carousel.style.transition = "all 0.5s ease";
@@ -31,12 +31,16 @@ d.onclick = function () {
 }
 
 function displayHidden() {
-    if (p == -nbr +3)
+    if (p == -nbr +6)
         g.style.visibility = "hidden";
     else
         g.style.visibility = "visible";
-    if (p == 2)
+    if (p == 5)
         d.style.visibility = "hidden";
     else
         d.style.visibility = "visible";
 }
+
+
+
+

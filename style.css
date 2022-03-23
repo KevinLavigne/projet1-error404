@@ -11,7 +11,7 @@
     --text-font-size-desktop: 1.3rem;
     --title-font-size-desktop: 2rem;
 
-  
+
 
 
     --text-font-size-mobile: 0.9rem;
@@ -412,31 +412,77 @@ tbody tr:nth-child(even) {
         width: 90vw;
         height: 15rem;
         margin: 0;
-        display: inline-block;
+        display: inline-blfle;
         background-size: cover;
-        border: 0.25rem solid #f1f1f1;
+        border: 0.2rem solid var(--main-color);
     }
 
     .button-carousel {
         position: absolute;
-
+        
     }
 
     #d {
         width: 3rem;
         right: 0.5rem;
+        padding-bottom: 3rem;
         transform: rotate(0deg);
     }
 
     #g {
         width: 3rem;
         left: 0.5rem;
+        padding-top: 3rem;
         transform: rotate(180deg);
     }
 
     .carousel-frame-all {
         display: none;
     }
+
+    .top-p {
+        display: none;
+    }
+
+    .top-like-btn {
+        background: var(--main-color);
+        border-radius: 1rem;
+        color: var(--secondary-color);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        height: 2.5rem;
+        width: 5rem;
+        margin-right: 0;
+
+    }
+
+    .top-img-like {
+        display: flex;
+        width:1.25rem;
+        margin-left: 0;
+        order: -1;
+        
+    }
+
+    #top-like-count {
+        display: flex;
+        font-size: var(--title-h3-font-size-mobile);
+        font-family: var(--main-font);
+        font-weight: bold;
+        
+    }
+
+    #top-like-text {
+        display: flex;
+        font-size: var(--title-h3-font-size-mobile);
+        font-family: var(--main-font);
+        font-weight: bold;
+    }
+
+
 
 }
 
@@ -459,7 +505,7 @@ tbody tr:nth-child(even) {
         align-items: center;
         margin-top: 5rem;
         margin-bottom: 0;
-        font-family:  var(--title-font);
+        font-family: var(--title-font);
         font-size: var(--title-font-size-desktop);
 
 
@@ -525,6 +571,9 @@ tbody tr:nth-child(even) {
         display: none;
     }
 
+    .top-like-btn {
+        display: none;
+    }
 
 }
 
