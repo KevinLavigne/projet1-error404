@@ -1,0 +1,339 @@
+:root {
+    --main-color: #b0d3f7;
+    ;
+    --secondary-color: #C0C0C0;
+    --light: rgb(241, 241, 241);
+    --dark: rgb(20, 20, 20);
+    ;
+
+    --main-font: 'Roboto', sans-serif;
+    --title-font: 'Permanent Marker', cursive;
+
+    --text-font-size: 1.3rem;
+}
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+  }
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.animated-text-container {
+    display: flex;
+    border: 2px solid black;
+    width: 50vw;
+    height: 25vw;
+    margin: 2vh 0;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.container > p{
+  font-size: 1.9vw;
+}
+.glitched{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 24%;
+    font-size: 8vw;
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: -7px;
+  }
+  
+  .glitch{
+    animation: glitch 1s linear infinite;
+
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  .glitch:before,
+  .glitch:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  .glitch:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  .glitch:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+
+.animated-text {
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 1.1vw;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 3s steps(40,end) forwards;
+}
+
+#delay-1{
+    animation-delay: 3s;
+}
+
+#delay-2{
+    animation-delay: 6s;
+}
+
+#delay-3{
+    animation-delay: 9s;
+}
+
+#delay-4{
+    animation-delay: 12s;
+}
+
+#delay-5{
+    animation-delay: 15s;
+}
+
+#delay-6{
+    animation-delay: 18s;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+        color:var(--main-color);
+    }
+    20%{
+        border-right: 1px solid orange;
+        color: #D3D3D3;
+    }
+    40%{
+        border-right: 1px solid orange;
+        color: #C0C0C0;
+    }
+    60%{
+        border-right: 1px solid orange;
+        color: #A9A9A9;
+    }
+    80%,99%{
+        border-right: 1px solid orange;
+        color: #696969;
+    }
+   100%{
+        border-right: none;
+        color: #000000;
+    }
+}
+.interactive-screen{
+    border: 1px solid black ;
+    width: 60vw;
+    height:35vw;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 2fr 2fr ;
+    grid-template-rows: 3.5fr 1.5fr;
+    background-color: var(--secondary-color);
+    margin-bottom: 2vh;
+    border-radius: 27px;
+}
+#grid-item4{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    border-bottom-right-radius: 25px;
+    border-collapse: collapse;
+}
+/*#game-text-1{
+
+}*/
+
+
+#game-text-2{
+  animation-delay: 3s;
+}
+#game-text-3{
+  animation-delay: 6s;
+}
+
+
+#grid-item1 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-collapse: collapse;
+}
+#grid-item2-1{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border-collapse: collapse;
+  border-left: #000000 solid 1px;
+  border-right: #000000 solid 1px;
+}
+#grid-item2-2{
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start: 3;
+grid-column-end: 4;
+border: 0px;
+border-collapse: collapse;
+border: #000000 solid 1px;
+border-top-right-radius: 25px;
+}
+
+#ennemy-img{
+  width: 23.75vw;
+  height: 18.3vw;
+}
+#player-img{
+  position: relative;
+  left: 2vw;
+  width: 20vw;
+  height: 18.3vw;
+}
+#player-name, #ennemy-name{
+  text-align: center;
+}
+
+.stats-ennemy , .hp-player {
+  height: 8vW;
+  border-bottom: #000000 solid 1px;
+}
+.stats-ennemy{
+  border-top-right-radius: 25px;
+}
+
+.flex-reward-text{
+  display: flex;
+  justify-content: center;
+}
+#reward-text{
+  width: 15vw;
+}
+
+table{
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.5vw;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-spacing: 0;
+}
+p{
+  font-size: 1.5vw;
+  text-align: center;
+}
+th{
+  text-align: center;
+}
+tr{
+  margin: 0;
+  padding: 0;
+  height: 2.68vw;
+}
+.col-1{
+  width: 70%;
+  border-bottom: #000000 solid 1px;
+  border-right: #000000 solid 1px;
+}
+.col-2{
+  width: 30%;
+  border-bottom: #000000 solid 1px ;
+}
+#border-top-left{
+  border-top-left-radius: 25px;
+}
+.flex-input {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.game-input {
+  width: 18%;
+  margin: .5vw 0 ;
+}
+
+.fight-input{
+  position: relative;
+  bottom: 4.15vw;
+  left: 20.25vw;
+  width: 30%;
+  height: 2vw;
+  font: var(--title-font);
+  border-radius: 10px;
+  background-color: rgb(96, 166, 200);
+  background-image: linear-gradient(to top left,
+  rgba(0, 0, 0, .2),
+  rgba(0, 0, 0, .2) 30%,
+  rgba(0, 0, 0, 0));;
+}
+
+.interactive-screen-part{
+  border: #000000 solid 1px;
+}
+    
