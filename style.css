@@ -157,7 +157,6 @@ header {
     line-height: 400px;
     text-align: center;
     background: rgb(228, 228, 228);
-    margin-bottom: 1rem;
 }
 
 header>h1 {
@@ -168,15 +167,14 @@ header>h1 {
 
 }
 
-main {
+.accueil.main {
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: var(--main-color);
 }
 
-section {
-
+.accueil-section {
     align-items: center;
     padding: .5rem;
     text-align: center;
@@ -184,15 +182,31 @@ section {
     background-color: rgb(245, 245, 245);
     border-style: solid;
     border-color: rgb(245, 245, 245);
-    border-radius: 30px;
 }
 
-p {
+.accueil.main p {
     font-family: 'Roboto Mono', monospace;
     font-size: small;
     margin-right: 2rem;
     margin-left: 2rem;
+    text-align: center;
 }
+
+.accueil-main img {
+    width: 90%;
+    height: auto;
+    border-radius: 2rem;
+}
+.accueil-main .accueil-section:last-child  p:last-of-type{
+    padding: 0.5rem 0.5rem;
+    width: 7rem;
+    border-radius: 0.6rem;
+    height: 3.5rem;
+    margin: 2rem auto;
+    font-size: var(--title-h3-font-size-mobile);
+    background-color: var(--secondary-color);
+}
+    
 
 /* ---------------------------------------------------------------- END accueil.html ---------------------------------------------------------------- */
 
@@ -431,7 +445,6 @@ tbody tr:nth-child(even) {
         justify-content: center;
         align-items: center;
 
-
     }
 
     .image-carousel {
@@ -585,6 +598,7 @@ tbody tr:nth-child(even) {
     border-radius: 0;
     background-color: var(--main-color);
     width: 100%;
+    text-align: center;
 }
 
 
@@ -854,6 +868,7 @@ tbody tr:nth-child(even) {
         vertical-align: middle;
         display: inline-block;
     }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -1021,5 +1036,24 @@ tbody tr:nth-child(even) {
     .footer-end {
         width: 100%;
         padding-bottom: 0.5rem;
+    }
+
+
+    .accueil-main > section {
+        padding: var(--space-between-blocks);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .accueil-section h2 {
+        width: 100%;
+        padding: 3rem;
+    }
+    .accueil-section >img {
+        width: 30%;
+    }
+    .accueil-section > p {
+        width: 30%;
+        padding: 5rem;
     }
 }
