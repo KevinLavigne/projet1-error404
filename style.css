@@ -215,6 +215,8 @@ footer {
 footer h3 {
     font-size: small;
     margin: 0;
+    
+    
 }
 
 .footer-logo {
@@ -224,6 +226,8 @@ footer h3 {
     color: var(--dark);
     font-size: var(--title-h3-font-size-mobile);
     padding-bottom: 0.2rem;
+    
+
 }
 
 .footer-ul {
@@ -1132,3 +1136,6 @@ tbody tr:nth-child(even) {
         padding-bottom: 0.5rem;
     }
 }
+
+
+

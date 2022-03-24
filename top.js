@@ -14,7 +14,7 @@ document.body.onload = function () {
     displayHidden();
 
 }
-g.onclick = function () {
+d.onclick = function () {
     if (p > -nbr + 6);
         p--;
     carousel.style.transform = "translate(" + p * 90 + "vw)";
@@ -22,7 +22,7 @@ g.onclick = function () {
     displayHidden();
 }
 
-d.onclick = function () {
+g.onclick = function () {
     if (p < 5);
         p++;
     carousel.style.transform = "translate(" + p * 90 + "vw)";
@@ -32,13 +32,13 @@ d.onclick = function () {
 
 function displayHidden() {
     if (p == -nbr +7)
-        g.style.visibility = "hidden";
-    else
-        g.style.visibility = "visible";
-    if (p == 5)
         d.style.visibility = "hidden";
     else
         d.style.visibility = "visible";
+    if (p == 5)
+        g.style.visibility = "hidden";
+    else
+        g.style.visibility = "visible";
 }
 
 
