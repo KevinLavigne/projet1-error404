@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Mono:wght@300&family=Share+Tech+Mono&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
     <title>Page Contact</title>
 </head>
 
@@ -24,7 +22,7 @@
                 <li><a href="info.html">Qui sommes nous </a></li>
                 <li><a href="top.html">Top 10</a></li>
                 <li><a href="contact.html">Don</a></li>
-            </ul>
+          </ul>
         </nav>
     </div>
     <img src="img-gif/merci.gif" alt="Messages de remerciements de nos donateurs et donatrices" class="contact-image-merci">
@@ -43,11 +41,11 @@
 
              <div class="contact-choix-montant">
               <label for="email"></label>
-              <input type="email" name="email" id="email" placeholder="Saisir le montant"/>
+              <input type="text" name="donnation" id="don" placeholder="Saisir le montant"/>
               <p>€</p>
             </div>
 
-            <p>Votre don ne vous coûte réellement que <span></span> après déduction fiscale.</p>
+            <p>Votre don ne vous coûte réellement que <span id="reduction"></span> après déduction fiscale.</p>
 
 
         </section>
@@ -58,12 +56,12 @@
 
                <div class="contact-div">
                  <label for="lastname" class="contact-label">Nom</label>
-                 <input type="text" name="lastname" class="contact-input" id="lastname" placeholder="Julien*" required/>
+                 <input type="text" name="lastname" class="contact-input" id="lastname" placeholder="Richard*" required/>
                </div>
 
                <div class="contact-div">
                  <label for="firstname" class="contact-label">Prénom</label>
-                 <input type="text" name="firstname" class="contact-input" id="firstname" placeholder="Richard*" required />
+                 <input type="text" name="firstname" class="contact-input" id="firstname" placeholder="Julien*" required />
                </div>
 
                <div class="contact-div">
@@ -175,6 +173,7 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
