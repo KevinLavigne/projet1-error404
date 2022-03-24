@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Mono:wght@300&family=Share+Tech+Mono&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
     <title>Page d'accueil</title>
 </head>
-
 <body>
     <div class="menu-wrap">
         <nav>
-            <a href="accueil.html" class="logo">ERROR 404</a>
+            <a href="accueil.html" class="logo">Error 404</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
+                <li><a href="accueil.html">Accueil</a></li>
                 <li><a href="info.html">Qui sommes nous </a></li>
                 <li><a href="top.html">Top 10</a></li>
                 <li><a href="contact.html">Don</a></li>
@@ -68,7 +66,7 @@
                 <h3>S'informer</h3>
             </li>
             <li class="footer-li"><a href="info.html">Qui sommes nous</a></li>
-            <li class="footer-li"><a href="top.html">Top20</a></li>
+            <li class="footer-li"><a href="top.html">Top 10</a></li>
             <li class="footer-li"><a href="contact.html">Don</a></li>
         </ul>
         <ul class="footer-ul">
@@ -82,13 +80,13 @@
 
         <div class="footer-socialmedia">
             <h3>Nous retrouver</h3>
-            <a href=""> <img src="social media/instagram.png" alt="Logo Instagram">
+            <a href="error404.html"> <img src="social media/instagram.png" alt="Logo Instagram">
                 <p>Instagram</p>
             </a>
-            <a href=""> <img src="social media/facebook.png" alt="Logo Facebook">
+            <a href="error404.html"> <img src="social media/facebook.png" alt="Logo Facebook">
                 <p>Facebook</p>
             </a>
-            <a href=""> <img src="social media/twitter.png" alt="Logo Twitter">
+            <a href="error404.html"> <img src="social media/twitter.png" alt="Logo Twitter">
                 <p>Twitter</p>
             </a>
         </div>
@@ -96,7 +94,9 @@
         <form class="footer-form">
             <label for="email"> <Span>Souscrire à notre newsletter </label>
             <input type="email" id="email" name="email">
-            <button class="footer-button" type="submit">Souscrire</button>
+            <button class="footer-button" type="button" id="popup" onclick="myFunction()">Souscrire
+                <span class="popuptext" id="myPopup">Merci pour la souscription</span>
+            </button>
         </form>
 
 
@@ -108,6 +108,7 @@
         </div>
 
     </footer>
+    <script src="popup.js"></script>
 </body>
 
 </html>
