@@ -669,7 +669,8 @@ tbody tr:nth-child(even) {
         width: 12rem;
         border-radius: 1.5rem;
         font-size: var(--text-font-size-desktop);
-        font-family: var(--main-font);
+        font-family: 'Share Tech Mono', monospace;
+        font-weight: bold;
         text-decoration: none;
         justify-content: center;
         align-items: center;
@@ -709,7 +710,7 @@ tbody tr:nth-child(even) {
         display: flex;
         align-items: flex-start;
         text-align: center;
-        font-family: var(--main-font);
+        font-family: 'Share Tech Mono', monospace;
         font-size: var(--text-font-size-desktop);
         justify-content: center;
     }
@@ -1364,6 +1365,7 @@ h2:last-child {
         font-family: var(--main-font);
         margin-left: 5rem;
         margin-right: 5rem;
+        font-family: 'Share Tech Mono', monospace;
     }
 
     .h1-politque {
