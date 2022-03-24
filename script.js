@@ -1,11 +1,3 @@
-/*
-function getVal() {
-    
-    
-    return reduction
-  }
-window.addEventListener("keypress",getVal)*/
-
 
 function updateReduction(event){
     const reduction = document.getElementById('reduction')
