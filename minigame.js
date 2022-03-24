@@ -1,7 +1,7 @@
 // script bordelique by Kévin Lavigne
 
 function RedirectionJavascript(){
-    document.location.href="acceuil.html";
+    document.location.href="accueil.html";
 }
 const option1 = document.getElementById('option1')
 const option2 = document.getElementById('option2')
