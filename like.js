@@ -4,7 +4,14 @@ let likeIcon = document.querySelector("#top-like-icon"),
 
 let clicked = false;
 
-
+const button1 = document.getElementById('d')
+const button2 = document.getElementById('g')
+button1.addEventListener("click",randomlike)
+button2.addEventListener("click",randomlike)
+function randomlike(){
+const random = Math.floor(Math.random() * 100) + 1;
+  count.innerHTML = random
+}
 likeBtn.addEventListener("click", () => {
   if (!clicked) {
     clicked = true;
