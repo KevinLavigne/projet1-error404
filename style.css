@@ -357,6 +357,7 @@ footer h3 {
     text-align: center;
     font-family: var(--font-title);
     font-size: var(--title-h2-font-size-mobile);
+    background-color: aquamarine;
 }
 
 .info-article>p {
@@ -369,7 +370,7 @@ footer h3 {
 }
 
 .info-section>h2 {
-    text-align: start;
+    text-align: center;
     margin-bottom: 1.5rem;
     padding-left: 1rem;
     font-size: var(--title-h2-font-size-mobile);
@@ -397,7 +398,7 @@ table thead th {
 }
 
 tbody td {
-    border: 0.15rem solid #ddd;
+    border: 0.15rem solid rgb(83, 8, 8);
 }
 
 tbody tr:nth-child(even) {
@@ -577,6 +578,9 @@ tbody tr:nth-child(even) {
     header>h1 {
         vertical-align: middle;
         display: inline-block;
+    }
+    header>h2 {
+        display: flex;
     }
 }
     
