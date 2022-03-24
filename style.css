@@ -1031,6 +1031,68 @@ padding: 0;
 
 /* ---------------------------------------------------------------- END contact.html ---------------------------------------------------------------- */
 
+/* ---------------------------------------------------------------- START error404.html ---------------------------------------------------------------- */
+
+.error404-main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-family: 'Share Tech Mono', monospace;
+    height: 100vh;
+}
+
+.error404-main button {
+    height: 4rem;
+    background-color: var(--dark);
+    color: var(--light);
+    cursor: pointer;
+}
+
+.error404-main button a {
+    padding: 1rem 4rem;
+    text-decoration: none;
+    color: var(--light);
+}
+
+.error404-body h2{
+    font-size: 0.8rem;
+}
+
+
+.error404-tex2{
+    color: white;
+}
+
+@media screen and (min-width:768px) {
+
+    
+    .error404-main {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        font-family: 'Share Tech Mono', monospace;
+        height: 100vh;
+        width: 80vh;
+        margin:  auto;
+        border-radius:
+        -webkit-box-shadow: 0px -1px 40px 18px rgba(230,18,230,1);
+        -moz-box-shadow: 0px -1px 40px 18px rgba(230,18,230,1);
+        box-shadow: 0px -1px 40px 18px rgba(230,18,230,1);
+    }
+    .error404-body{
+        background-color: var(--dark);
+    }
+        
+}
+
+
+
+
+
+/* ---------------------------------------------------------------- END error404.html ---------------------------------------------------------------- */
+
 /* ----------------------------------------------------------------  MEDIA QUERIES ---------------------------------------------------------------- */
 
 
