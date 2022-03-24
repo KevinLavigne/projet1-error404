@@ -389,7 +389,7 @@ footer h3 {
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
   }
-  
+
   @-webkit-keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
