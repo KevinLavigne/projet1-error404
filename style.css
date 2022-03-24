@@ -927,6 +927,47 @@ padding: 0;
 
 /* ---------------------------------------------------------------- END contact.html ---------------------------------------------------------------- */
 
+/* ---------------------------------------------------------------- START error404.html ---------------------------------------------------------------- */
+
+.error404-main {
+    display: flex;
+}
+
+.error404-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin: auto;
+   }
+
+   
+  .error404-typing{
+    display: flex;
+    overflow: hidden;
+    border-right: .50em solid orange;
+    border-radius: 4px;
+    white-space: nowrap;
+    animation: 
+      error404-typing 5s steps(22, end) forwards,
+      error404-blinking 1.2s infinite;
+      font-size: 3rem;
+      width: 0;
+  }
+  @keyframes error404-typing {
+  from { width: 0 }
+  to { width: 100% }
+  }
+  @keyframes error404-blinking {
+  from { border-color: transparent }
+  to { border-color: rgb(253, 111, 29); }
+  }
+
+
+
+/* ---------------------------------------------------------------- END error404.html ---------------------------------------------------------------- */
+
 /* ----------------------------------------------------------------  MEDIA QUERIES ---------------------------------------------------------------- */
 
 
