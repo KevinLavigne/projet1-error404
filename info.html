@@ -175,7 +175,9 @@
         <form class="footer-form">
             <label for="email"> <Span>Souscrire à notre newsletter </label>
             <input type="email" id="email" name="email">
-            <button class="footer-button" type="submit">Souscrire</button>
+            <button class="footer-button" type="button" id="popup" onclick="myFunction()">Souscrire
+                <span class="popuptext" id="myPopup">Merci pour la souscription</span>
+            </button>
         </form>
         <div class="footer-end">
             <p>Crew Name © 2022</p>
@@ -183,6 +185,7 @@
             <a href="">Mentions Légales</a>
         </div>
     </footer>
+    <script src="popup.js"></script>
 </body>
 
 </html>
