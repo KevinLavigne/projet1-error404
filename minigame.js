@@ -294,7 +294,7 @@ const werewolf = new Character("Werewolf", 50, 20 , 10,true,true, "minigameImg/W
 
 const demon = new Character("Demon", 100, 10, 0, true,false, "minigameImg/Demon.jpg","One less abomition for the wolrd. The travel was hard but i see the castle entrance. It would be a ","good idea to take a little break on castle courts. after this u take your bravery on hands and begin"," Castle exploration. On Throne Room you find an Demon making occult ceremony and sacrifice.")
 
-const boss = new Character('Redirection Button',999,500,100,true,true, "minigameImg/Boss.jpg", `Dragon :"who are you small bug? no way i don't care. My name is Redirection-Event.`,`what are you doing here? There in no place for you here. I will bring you back to your own World.`, `Be ready that will burnt a little. Go and press this small rectangle just above the stat tab"` )
+const boss = new Character('Redirection Button',999,500,100,true,true, "minigameImg/Boss.jpg", `Dragon :"who are you small bug? no way i don't care. My name is Redirection-Event.`,`what are you doing here? There in no place for you here. I will bring you back to your own World.`, `Be ready that will burnt a little. Go and press this big blue button just above"` )
 
 window.addEventListener("load",screenWidthCheck)
 

@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Page Contact</title>
+    <link rel="icon" type="image/x-icon" href="minigameImg/favicon.jpg">
 </head>
 
 <body class="contact-body">
@@ -117,7 +118,8 @@
               </div>
 
                <div class="contact-div">
-                 <button type="submit" class="contact-button">Faire un don</button>
+                 <button type="submit" class="contact-button" id="buttonDonate">Faire un don</button>
+                 <p id="thank-you"></p>
                </div>
 
              </form>
@@ -128,14 +130,14 @@
 
   </main>
     <footer>
-        <h3 class="footer-logo">ERROR404</h3>
+        <h3 class="footer-logo">ERROR 404</h3>
 
         <ul class="footer-ul">
             <li class="footer-li">
                 <h3>S'informer</h3>
             </li>
             <li class="footer-li"><a href="info.html">Qui sommes nous</a></li>
-            <li class="footer-li"><a href="top.html">Top20</a></li>
+            <li class="footer-li"><a href="top.html">Top 10</a></li>
             <li class="footer-li"><a href="contact.html">Don</a></li>
         </ul>
         <ul class="footer-ul">
@@ -147,13 +149,13 @@
 
         <div class="footer-socialmedia">
             <h3>Nous retrouver</h3>
-            <a href=""> <img src="social media/instagram.png" alt="Logo Instagram">
+            <a href="error404.html"> <img src="social media/instagram.png" alt="Logo Instagram">
                 <p>Instagram</p>
             </a>
-            <a href=""> <img src="social media/facebook.png" alt="Logo Facebook">
+            <a href="error404.html"> <img src="social media/facebook.png" alt="Logo Facebook">
                 <p>Facebook</p>
             </a>
-            <a href=""> <img src="social media/twitter.png" alt="Logo Twitter">
+            <a href="error404.html"> <img src="social media/twitter.png" alt="Logo Twitter">
                 <p>Twitter</p>
             </a>
         </div>
@@ -161,19 +163,27 @@
         <form class="footer-form">
             <label for="email"> <Span>Souscrire à notre newsletter </label>
             <input type="email" id="email" name="email">
-            <button class="footer-button" type="submit">Souscrire</button>
+            <button class="footer-button" type="button" id="popup" onclick="myFunction()">Souscrire
+              <span class="popuptext" id="myPopup">Merci pour la souscription</span>
+          </button>
         </form>
 
 
 
         <div class="footer-end">
             <p>Crew Name © 2022</p>
-            <a href="">Politique de confidentialité</a>
-            <a href="">Mentions Légales</a>
+            <a href="mention-legale.html#politique">Politique de confidentialité</a>
+            <a href="mention-legale.html">Mentions Légales</a>
         </div>
-
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+          class="button-to-top">
+          <path fill="#8a2be2"
+              d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M15.7,12.7C15.7,12.7,15.7,12.7,15.7,12.7c-0.4,0.4-1,0.4-1.4,0c0,0,0,0,0,0L13,11.4V15c0,0.6-0.4,1-1,1s-1-0.4-1-1v-3.6l-1.3,1.3c-0.4,0.4-1,0.4-1.4,0c-0.4-0.4-0.4-1,0-1.4l3-3c0.4-0.4,1-0.4,1.4,0c0,0,0,0,0,0l3,3C16.1,11.7,16.1,12.3,15.7,12.7z" />
+          </svg></a>
+  </footer>
     </footer>
     <script src="script.js"></script>
+    <script src="popup.js"></script>
 </body>
 
 </html>
