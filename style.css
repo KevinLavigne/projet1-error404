@@ -40,9 +40,8 @@ body {
 
 
 nav {
-    background-color: var(--secondary-color);
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
-    position: relative;
+    background-color: rgb(17, 17, 17);
+    
     width: 100%;
     
 
@@ -405,6 +404,7 @@ footer h3 {
 /* ---------------------------------------------------------------- START info.html ---------------------------------------------------------------- */
 
 .info-main {
+   
     background-color: var(--main-color);
     height: min-content;
     display: flex;
@@ -414,13 +414,22 @@ footer h3 {
 }
 
 .info-title {
-    text-align: center;
-    font-family: var(--title-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
     font-size: var(--title-h1-font-size-mobile);
+    margin:0;
+    margin-top: 4rem;
+    border: aquamarine , solid;
+    border-radius: 4rem;
+
+    
+    
 }
 
 .info-article {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .info-article>h2 {
@@ -428,6 +437,12 @@ footer h3 {
     font-family: var(--font-title);
     font-size: var(--title-h2-font-size-mobile);
     background-color: aquamarine;
+    
+    border: aquamarine black 1px solid;
+    height: 1rem;
+    line-height: 1rem;
+    border-radius: 30px 
+    
 }
 
 .info-article>p {
@@ -437,6 +452,9 @@ footer h3 {
 
 .info-section {
     max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
 }
 
 .info-section>h2 {
@@ -473,7 +491,7 @@ table thead th {
 }
 
 tbody td {
-    border: 0.15rem solid rgb(83, 8, 8);
+    border: 0.15rem solid rgb(18, 18, 18);
 }
 
 tbody tr:nth-child(even) {
@@ -1145,11 +1163,13 @@ padding: 0;
 
 @media only screen and (min-width: 768px) {
     .menu-wrap {
-        background: var(--secondary-color);
+        background: rgb(17, 17, 17);
         height: 55px;
         line-height: 55px;
         width: 100%;
     }
+    
+    
 
     nav li {
         float: left;
@@ -1178,8 +1198,9 @@ padding: 0;
     .info-div-articles {
         display: flex;
         justify-content: space-around;
-        margin-bottom: 5rem;
+        
     }
+
 
     .info-title {
         margin-bottom: 3rem;
@@ -1189,24 +1210,38 @@ padding: 0;
         text-align: center;
 
     }
+    
+    
 
     .info-article {
         margin: 0 3rem;
-        background-color: #A6A6A6;
+        
         border-radius: 1rem;
+        padding: 2rem;
     }
 
     .info-article1 {
-        margin-left: 7rem;
-        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+        
+        margin-left: auto;
+        margin-right: 0;
+       
     }
 
     .info-article2 {
-        margin-right: 7rem;
-        box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-
+        margin-right: auto;
+        margin-left: 0;
+        
     }
-
+    .info-article3 {
+        text-align: center;
+        padding-right: 10rem;
+        padding-left: 10rem;
+        padding-top: 0;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        
+    }
+    
     .info-table {
         width: 100%;
     }
@@ -1223,19 +1258,22 @@ padding: 0;
         margin-bottom: 5rem;
         padding: 2rem;
 
-        background-color: #A6A6A6;
+        
         border-radius: 1rem;
-        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+        box-shadow: aquamarine;
     }
 
     .info-section>h2 {
         width: 100%;
         margin-bottom: 1.5rem;
         text-align: center;
+        
+        
     }
+    
 
     tbody>tr:hover {
-        background-color: #f5f5f5;
+        background-color: aquamarine;
         transform: scale(1.02);
         box-shadow: 0 0.25rem 0.75rem var(--dark);
     }
