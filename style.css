@@ -485,6 +485,10 @@ tbody tr:nth-child(even) {
 /* ---------------------------------------------------------------- START top.html ---------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
+    .top-body {
+        background-color: var(--light)
+    }
+
     .top12-flex {
         display: flex;
         height: 100%;
@@ -492,8 +496,8 @@ tbody tr:nth-child(even) {
         overflow: hidden;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        background-color: white;
     }
+
 
     .h1-top {
         display: flex;
@@ -501,19 +505,13 @@ tbody tr:nth-child(even) {
         margin-top: 3rem;
         margin-bottom: 0;
         font-size: var(--title-h1-font-size-mobile);
-        font-family: var(--title-font);
-
+        font-family: 'Share Tech Mono', monospace;;
     }
-
-
     #carousel {
         display: flex;
         justify-content: center;
         align-items: center;
-
-
     }
-
     .image-carousel {
         width: 90vw;
         height: 15rem;
@@ -523,37 +521,31 @@ tbody tr:nth-child(even) {
         display: flex;
     }
 
-    .image-carousel:last-child{
+    .image-carousel:last-child {
         border: 0;
     }
 
     .button-carousel {
         position: absolute;
-
     }
-
     #d {
         width: 3rem;
         right: 0.5rem;
         padding-bottom: 3rem;
         transform: rotate(0deg);
     }
-
     #g {
         width: 3rem;
         left: 0.5rem;
         padding-top: 3rem;
         transform: rotate(180deg);
     }
-
     .carousel-frame-all {
         display: none;
     }
-
     .top-p {
         display: none;
     }
-
     .top-like-btn {
         background: var(--main-color);
         border-radius: 1rem;
@@ -565,8 +557,8 @@ tbody tr:nth-child(even) {
         margin-top: 1.5rem;
         height: 3rem;
         width: 6rem;
-        
-        
+
+
 
     }
 
@@ -575,7 +567,8 @@ tbody tr:nth-child(even) {
         width: 1.25rem;
         margin-left: 0;
         order: -1;
-        
+        color: var(--secondary-color);
+
 
     }
 
@@ -584,6 +577,7 @@ tbody tr:nth-child(even) {
         font-size: var(--title-h3-font-size-mobile);
         font-family: var(--main-font);
         font-weight: bold;
+        color: var(--secondary-color);
 
     }
 
@@ -592,12 +586,29 @@ tbody tr:nth-child(even) {
         font-size: var(--title-h3-font-size-mobile);
         font-family: var(--main-font);
         font-weight: bold;
-        
+        color: var(--secondary-color);
+
+
     }
 
-
+    /* Début bouton ancre haut de page */
+    html {
+        scroll-behavior: smooth;
+    }
+    .button-to-top {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        display: block;
+        width: 3rem;
+        z-index: 9999;
+        opacity: 60%;
+    }
 
 }
+/* Fin bouton ancre haut de page */
+    
+
 @media screen and (min-width: 768px) {
     .carousel-frame-all {
         display: inline-flex;
@@ -609,6 +620,10 @@ tbody tr:nth-child(even) {
 
     }
 
+    .top12-flex {
+        background-color: var(--main-color);
+    }
+
     .h1-top {
         display: flex;
         width: 100vw;
@@ -617,9 +632,10 @@ tbody tr:nth-child(even) {
         align-items: flex-end;
         margin-top: 0;
         margin-bottom: 0;
-        font-family: var(--title-font);
+        font-family: 'Share Tech Mono', monospace;
         font-size: var(--title-font-size-desktop);
-        background-color: var(--main-color); ;
+        background-color: var(--main-color);
+        ;
 
     }
 
@@ -630,7 +646,7 @@ tbody tr:nth-child(even) {
         width: 100%;
         gap: 2% 2%;
         margin: 5% 0;
-        
+
     }
 
     .carousel-frame {
@@ -642,7 +658,7 @@ tbody tr:nth-child(even) {
         flex-direction: column-reverse;
         overflow: hidden;
         padding-top: 37.5%;
-        
+
     }
 
     .top-button-click {
@@ -655,32 +671,31 @@ tbody tr:nth-child(even) {
         width: 12rem;
         border-radius: 1.5rem;
         font-size: var(--text-font-size-desktop);
-        font-family: var(--main-font);
+        font-family: 'Share Tech Mono', monospace;
+        font-weight: bold;
         text-decoration: none;
         justify-content: center;
-        align-items: center;  
-        color: var(--main-color); 
-        
+        align-items: center;
+        color: var(--main-color);
+
     }
 
     .top-button-click:hover {
         cursor: pointer;
-        color: white;
+        color: var(--light);
         display: initial;
-        background-color: blueviolet;
+        background-color: rgb(138, 43, 226);
         transition: 0.5s ease;
         opacity: 75%;
         justify-content: center;
         align-items: center;
         display: flex;
-        transition: all 0.3s ;
+        transition: all 0.3s;
     }
 
     .top-button-click:active {
         transform: scale(1.025);
     }
-
-
     .top-img {
         position: absolute;
         top: 0;
@@ -691,47 +706,55 @@ tbody tr:nth-child(even) {
         border-radius: 1.5rem;
         object-fit: cover;
     }
-
     .top-p {
         width: 100%;
         height: 10vh;
         display: flex;
         align-items: flex-start;
         text-align: center;
-        font-family: var(--main-font);
+        font-family: 'Share Tech Mono', monospace;
         font-size: var(--text-font-size-desktop);
         justify-content: center;
-
     }
-
     #carousel {
         display: none;
-
     }
-
     .image-carousel {
         display: none;
     }
-
     .button-carousel {
         display: none;
-
     }
-
     #d {
         display: none;
-
     }
-
     #g {
         display: none;
     }
-
     .top-like-btn {
         display: none;
     }
 
+/* Début bouton ancre haut de page */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .button-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: block;
+        width: 4rem;
+        border-radius: 50%;
+        z-index: 9999;
+        opacity: 60%;
+
+
+    }
+
 }
+/* Fin bouton ancre haut de page */
 
 /* ---------------------------------------------------------------- END top.html ---------------------------------------------------------------- */
 
@@ -1098,7 +1121,23 @@ padding: 0;
         vertical-align: middle;
         display: inline-block;
     }
+    #accueil-sauver{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--light);
+        font-size: large;
+        height: 2rem; 
+        width: 15rem; 
+        align-items: center;
+        text-align: center;
+    }
 
+    #accueil-sauver p {
+        text-decoration: none;
+    }
 }
     
 
@@ -1317,6 +1356,8 @@ padding: 0;
         align-items: center;
         color: var(--light);
         font-size: large;
+        
+        
     }
 
     .accueil-section{
@@ -1326,3 +1367,102 @@ padding: 0;
     
 
 }
+
+/*---------------------------------------Debut de la page mention legale ----------------------------------------------*/
+
+.h1-mention-legale {
+    display: flex;
+    font-size: var(--title-h1-font-size-mobile);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+
+.main-mention {
+    background-color: var(--light);
+}
+
+.section-mention-legale h2 {
+    font-family: var'Share Tech Mono', monospace;
+    font-size: var(--title-h2-font-size-mobile);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.section-mention-legale,
+h2:last-child {
+    margin-bottom: 2rem;
+}
+
+.section-mention-legale p {
+    display: flex;
+    justify-content: center;
+    font-size: var(--text-font-size-mobile);
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: var(--main-font)
+}
+
+
+.h1-politque {
+    display: flex;
+    font-size: var(--title-h1-font-size-mobile);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:768px) {
+
+    .main-mention {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h1-mention-legale {
+        display: flex;
+        font-size: var(--title-font-size-desktop);
+        align-items: center;
+        justify-content: center;
+        font-family: 'Share Tech Mono', monospace;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        width: 100vw;
+    }
+
+    .section-mention-legale h2 {
+        font-size: 1.5rem;
+        font-family: 'Share Tech Mono', monospace;
+        margin-top: 3rem;
+    }
+    .section-mention-legale p {
+        font-size: var(--text-font-size-desktop);
+        font-family: var(--main-font);
+        margin-left: 5rem;
+        margin-right: 5rem;
+        font-family: 'Share Tech Mono', monospace;
+    }
+
+    .h1-politque {
+        display: flex;
+        font-size: var(--title-font-size-desktop);
+        align-items: center;
+        justify-content: center;
+        font-family: 'Share Tech Mono', monospace;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        width: 100vw;
+    }
+
+
+}
+
+/* ---------------------------------------------------- Fin de la page mention legale -------------------------------------------- */
+
+
