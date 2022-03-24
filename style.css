@@ -455,7 +455,7 @@ tbody tr:nth-child(even) {
         margin-top: 3rem;
         margin-bottom: 0;
         font-size: var(--title-h1-font-size-mobile);
-        font-family: var(--title-font);
+        font-family: 'Share Tech Mono', monospace;;
     }
     #carousel {
         display: flex;
@@ -540,9 +540,17 @@ tbody tr:nth-child(even) {
 
 
     }
-
+    html {
+        scroll-behavior: smooth;
+    }
     .button-to-top {
-        display: none;
+        position: fixed;
+        bottom: 1rem;
+        right: 2rem;
+        display: block;
+        width: 3rem;
+        z-index: 9999;
+        opacity: 75%;
     }
 
 
@@ -572,7 +580,7 @@ tbody tr:nth-child(even) {
         align-items: flex-end;
         margin-top: 0;
         margin-bottom: 0;
-        font-family: var(--title-font);
+        font-family: 'Share Tech Mono', monospace;
         font-size: var(--title-font-size-desktop);
         background-color: var(--main-color);
         ;
@@ -674,6 +682,7 @@ tbody tr:nth-child(even) {
         display: none;
     }
 
+/* Début bouton ancre haut de page */
     html {
         scroll-behavior: smooth;
     }
@@ -691,6 +700,7 @@ tbody tr:nth-child(even) {
     }
 
 }
+/* Fin bouton ancre haut de page */
 
 /* ---------------------------------------------------------------- END top.html ---------------------------------------------------------------- */
 
@@ -1238,7 +1248,7 @@ padding: 0;
 
 }
 
-.top-body {
+.main-mention {
     background-color: var(--light);
 }
 
@@ -1319,5 +1329,7 @@ h2:last-child {
 
 
 }
+
+/* ---------------------------------------------------- Fin de la page mention legale -------------------------------------------- */
 
 
