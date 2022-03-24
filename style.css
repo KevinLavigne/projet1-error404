@@ -9,7 +9,10 @@
 
     --text-font-size: 1.3rem;
     --text-font-size-desktop: 1.3rem;
-    --title-font-size-destop: 2rem;
+    --title-font-size-desktop: 2rem;
+
+
+
 
     --text-font-size-mobile: 0.9rem;
     --title-h1-font-size-mobile: 1.4rem;
@@ -264,6 +267,8 @@ footer h3 {
     color: var(--dark);
     font-size: var(--title-h3-font-size-mobile);
     padding-bottom: 0.2rem;
+    
+
 }
 
 .footer-li {
@@ -295,6 +300,10 @@ footer h3 {
     padding-top: 0.35rem;
     width: clamp(10%, 15%, 25px);
     height: auto;
+}
+
+.footer-socialmedia a {
+    text-decoration: none;
 }
 
 .footer-form {
@@ -430,11 +439,16 @@ footer h3 {
 }
 
 .info-section>h2 {
-    text-align: start;
-    margin-bottom: 1.5rem;
-    padding-left: 1rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 0.6rem 0.6rem;
     font-size: var(--title-h2-font-size-mobile);
     font-family: var(--title-font);
+    background-color: var(--secondary-color);
+    border: 0.25rem solid var(--dark);
+    width: 90%;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
 }
 
 .info-table {
@@ -723,10 +737,11 @@ tbody tr:nth-child(even) {
 
 /* ---------------------------------------------------------------- START contact.html ---------------------------------------------------------------- */
 
-.contact-image-merci{
+.contact-image-merci {
     max-width: 100%;
 }
-.contact-body{
+
+.contact-body {
     background-color: var(--secondary-color);
 }
 
@@ -740,7 +755,7 @@ padding: 0;
     background-color: var(--main-color);
 }
 
-.contact-main > *{
+.contact-main>* {
     margin: 0;
     padding: 0 ;
     border:0;
@@ -749,8 +764,7 @@ padding: 0;
     text-align: center;
 }
 
-
-.contact-section *{
+.contact-section * {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -758,7 +772,7 @@ padding: 0;
     text-align: center;
     font-size: var(--text-font-size-mobile);
     padding: var(--space-between-elements);
-    border: 0;    
+    border: 0;
 }
 
 
@@ -774,13 +788,13 @@ padding: 0;
 
 /** Section faire un don **/
 
-.contact-choix-dons{
+.contact-choix-dons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-choix-dons > h3 {
+.contact-choix-dons>h3 {
     margin: 2rem 1rem;
     padding: 0.5rem 0.5rem;
     width: 7rem;
@@ -792,18 +806,18 @@ padding: 0;
 }
 
 
-.contact-choix-dons >h3:active {
+.contact-choix-dons>h3:active {
     color: white;
     background-color: blueviolet;
 }
 
-.contact-choix-dons >h3:last-child{
+.contact-choix-dons>h3:last-child {
     color: white;
     background-color: blueviolet;
-    
+
 }
 
-.contact-choix-montant{
+.contact-choix-montant {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -835,6 +849,11 @@ padding: 0;
     border-radius: 0.6rem 0 0 0.6rem;
 }
 
+.contact-choix-montant input::placeholder {
+    text-align: center;
+    font-size: large;
+}
+
 .contact-choix-montant > p {
     height: 3rem;
     padding: 0 0.5rem;
@@ -846,7 +865,17 @@ padding: 0;
 
 /** START section information **/
 
-.contact-form *{
+/** début de section information **/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contact-form * {
    margin: 0.4rem 0;
    border-radius: 0.6rem;
    display: flex;
@@ -889,6 +918,7 @@ padding: 0;
     justify-content: space-between;
     width: 100%;
 }
+
 .contact-div input::placeholder {
     text-align: center;
     font-size: large;
@@ -910,7 +940,8 @@ padding: 0;
 .contact-image-merci{
         width: 100%;
     }
-    .contact-main{
+
+    .contact-main {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
@@ -929,7 +960,7 @@ padding: 0;
         justify-content: center;
     }
 
-    .contact-section-information .contact-join .contact-div{
+    .contact-section-information .contact-join .contact-div {
         flex-direction: row;
     }
 
@@ -938,7 +969,7 @@ padding: 0;
         color: var(--dark);
     }
 
-    .contact-choix-dons > h3 {
+    .contact-choix-dons>h3 {
         align-self: center;
         text-align: center;
         justify-content: center;
