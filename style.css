@@ -590,22 +590,24 @@ tbody tr:nth-child(even) {
 
 
     }
+
+    /* Début bouton ancre haut de page */
     html {
         scroll-behavior: smooth;
     }
     .button-to-top {
         position: fixed;
         bottom: 1rem;
-        right: 2rem;
+        right: 1rem;
         display: block;
         width: 3rem;
         z-index: 9999;
-        opacity: 75%;
+        opacity: 60%;
     }
 
-
-
 }
+/* Fin bouton ancre haut de page */
+    
 
 @media screen and (min-width: 768px) {
     .carousel-frame-all {
@@ -746,6 +748,7 @@ tbody tr:nth-child(even) {
         width: 4rem;
         border-radius: 50%;
         z-index: 9999;
+        opacity: 60%;
 
 
     }
@@ -1056,7 +1059,23 @@ padding: 0;
         vertical-align: middle;
         display: inline-block;
     }
+    #accueil-sauver{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--light);
+        font-size: large;
+        height: 2rem; 
+        width: 15rem; 
+        align-items: center;
+        text-align: center;
+    }
 
+    #accueil-sauver p {
+        text-decoration: none;
+    }
 }
     
 
@@ -1275,6 +1294,8 @@ padding: 0;
         align-items: center;
         color: var(--light);
         font-size: large;
+        
+        
     }
 
     .accueil-section{
@@ -1295,8 +1316,6 @@ padding: 0;
     font-family: 'Share Tech Mono', monospace;
     margin-top: 3rem;
     text-transform: uppercase;
-
-
 }
 
 .main-mention {
