@@ -296,7 +296,14 @@ const demon = new Character("Demon", 100, 10, 0, true,false, "minigameImg/Demon.
 
 const boss = new Character('Redirection Button',999,500,100,true,true, "minigameImg/Boss.jpg", `Dragon :"who are you small bug? no way i don't care. My name is Redirection-Event.`,`what are you doing here? There in no place for you here. I will bring you back to your own World.`, `Be ready that will burnt a little. Go and press this small rectangle just above the stat tab"` )
 
+window.addEventListener("load",screenWidthCheck)
 
+function screenWidthCheck(){
+    width = window.screen.width
+    if (width < 768){
+        document.location.href="accueil.html"
+    }
+}
 
 
 /*

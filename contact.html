@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Page Contact</title>
+    <link rel="icon" type="image/x-icon" href="minigameImg/favicon.jpg">
 </head>
 
 <body class="contact-body">
@@ -40,11 +41,12 @@
              </div>
 
              <div class="contact-choix-montant">
-              <label for="email"></label><input type="email" name="email" id="email" placeholder="Saisir le montant"/>
+              <label for="email"></label>
+              <input type="text" name="donnation" id="don" placeholder="Saisir le montant"/>
               <p>€</p>
             </div>
 
-            <p>Votre don ne vous coûte réellement que <span></span> après déduction fiscale.</p>
+            <p>Votre don ne vous coûte réellement que <span id="reduction"></span> après déduction fiscale.</p>
 
 
         </section>
@@ -146,13 +148,13 @@
 
         <div class="footer-socialmedia">
             <h3>Nous retrouver</h3>
-            <a href=""> <img src="social media/instagram.png" alt="Logo Instagram">
+            <a href="error404.html"> <img src="social media/instagram.png" alt="Logo Instagram">
                 <p>Instagram</p>
             </a>
-            <a href=""> <img src="social media/facebook.png" alt="Logo Facebook">
+            <a href="error404.html"> <img src="social media/facebook.png" alt="Logo Facebook">
                 <p>Facebook</p>
             </a>
-            <a href=""> <img src="social media/twitter.png" alt="Logo Twitter">
+            <a href="error404.html"> <img src="social media/twitter.png" alt="Logo Twitter">
                 <p>Twitter</p>
             </a>
         </div>
@@ -160,7 +162,9 @@
         <form class="footer-form">
             <label for="email"> <Span>Souscrire à notre newsletter </label>
             <input type="email" id="email" name="email">
-            <button class="footer-button" type="submit">Souscrire</button>
+            <button class="footer-button" type="button" id="popup" onclick="myFunction()">Souscrire
+              <span class="popuptext" id="myPopup">Merci pour la souscription</span>
+          </button>
         </form>
 
 
@@ -172,6 +176,8 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
 </body>
 
 </html>

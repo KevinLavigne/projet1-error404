@@ -317,13 +317,12 @@ tr{
   width: 18%;
   margin: .5vw 0 ;
 }
-
 .fight-input{
   position: relative;
-  bottom: 4.15vw;
+  bottom: 6vw;
   left: 20.25vw;
   width: 30%;
-  height: 2vw;
+  font-size: 1.5vw;
   font: var(--title-font);
   border-radius: 10px;
   background-color: rgb(96, 166, 200);
