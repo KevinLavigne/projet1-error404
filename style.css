@@ -40,7 +40,7 @@ body {
 
 
 nav {
-    background-color: var();
+    background-color: rgb(17, 17, 17);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: relative;
     width: 100%;
@@ -886,6 +886,8 @@ tbody tr:nth-child(even) {
 
 /** Section faire un don **/
 
+
+
 .contact-choix-dons {
     display: flex;
     justify-content: center;
@@ -1087,6 +1089,8 @@ tbody tr:nth-child(even) {
 
 @media screen and (min-width: 768px) {
 
+
+
     .contact-body .contact-main {
         display: flex;
         flex-direction: row;
@@ -1112,6 +1116,12 @@ tbody tr:nth-child(even) {
 
 
 @media only screen and (max-width: 768px) {
+
+    .container >h2{
+        font-size: 1rem;
+        text-align: start;
+    }
+
     nav ul {
         background-color: var(--light);
     }
@@ -1198,7 +1208,7 @@ tbody tr:nth-child(even) {
 
 @media only screen and (min-width: 768px) {
     .menu-wrap {
-        background: var(--dark);
+        background:rgb(17, 17, 17);
         height: 55px;
         line-height: 55px;
         width: 100%;
@@ -1509,10 +1519,7 @@ tbody tr:nth-child(even) {
     margin-top: 2rem;
 }
 
-.section-mention-legale,
-h2:last-child {
-    margin-bottom: 2rem;
-}
+
 
 .section-mention-legale p {
     display: flex;
