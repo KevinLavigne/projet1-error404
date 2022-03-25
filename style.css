@@ -576,7 +576,8 @@ tbody tr:nth-child(even) {
         margin-top: 1.5rem;
         height: 3rem;
         width: 6rem;
-
+        position: relative;
+        bottom: 10%;
 
 
     }
@@ -1103,7 +1104,7 @@ padding: 0;
     .error404-body{
         background-color: var(--dark);
     }
-        
+}
 
 
 

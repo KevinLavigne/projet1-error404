@@ -153,7 +153,19 @@ class Character {
          }
          if (player[5] <= 0){
             this.render()
-            RedirectionJavascript()
+            gameText1.classList.remove("animated-text")
+            gameText2.classList.remove("animated-text")
+            gameText3.classList.remove("animated-text")
+            void gameText1.offsetWidth;
+            void gameText2.offsetWidth;
+            void gameText3.offsetWidth;
+            gameText1.classList.add("animated-text")
+            gameText1.innerHTML = "No way to find your way by yourself. Your vision is blurred, you start to lose consciousness .";
+            void gameText2.offsetWidth;
+            void gameText3.offsetWidth;
+            gameText2.innerHTML = "";
+            gameText3.innerHTML = "";
+            setInterval(RedirectionJavascript, 10000)
          }
             if (this.life <= 0 && this.name === "wolf") {
                endOfFight()    
@@ -278,7 +290,7 @@ function fight6(){
 
 
 fightOption.addEventListener('click',fight1)
-const wolf = new Character ("wolf", 30, 5, 0, true, false ,"minigameImg/wolf.jpg","You wake up on a strange forest, your mind is trouble and you don't remenber why you","are here. You look around you and see a castle on the hill. You decide to go to castle."," you stop your travel on wolf growl right behind you. The starving wolf jump on you." );
+const wolf = new Character ("wolf", 45, 10, 0, true, false ,"minigameImg/wolf.jpg","You wake up on a strange forest, your mind is trouble and you don't remenber why you","are here. You look around you and see a castle on the hill. You decide to go to castle."," you stop your travel on wolf growl right behind you. The starving wolf jump on you." );
 wolf.render()
 
 fightOption.innerHTML = "Smash Him!"
@@ -286,13 +298,13 @@ gameText1.innerHTML = wolf.text1
 gameText2.innerHTML = wolf.text2
 gameText3.innerHTML = wolf.text3
 
-const undead = new Character ("Undead", 45, 8, 5, true, false,"minigameImg/Undead.jpg","You continu your journey on the forest, you cross an foggy graveyard, the smell of flesh" , "and rot is intense at point as your head spinning. You stop to rest a litlle and your karma"," make you to feel the hideous undead right before he take you from behind.")
+const undead = new Character ("Undead", 70, 15, 5, true, false,"minigameImg/Undead.jpg","You continu your journey on the forest, you cross an foggy graveyard, the smell of flesh" , "and rot is intense at point as your head spinning. You stop to rest a litlle and your karma"," make you to feel the hideous undead right before he take you from behind.")
 
-const archSpider = new Character ("ArchSpider", 90, 15, 0,true, false, "minigameImg/Spider.jpg","You finaly succesfully go out of this graveyard in life. Your adventure goes on into a swamp, you"," heard the crack of wood far away. there is the fastest way to go to castle and you have no time"," to go round. You focus on your road for dodge water, and see a strange black column. Wtf is that?")
+const archSpider = new Character ("ArchSpider", 75, 20, 10,true, false, "minigameImg/Spider.jpg","You finaly succesfully go out of this graveyard in life. Your adventure goes on into a swamp, you"," heard the crack of wood far away. there is the fastest way to go to castle and you have no time"," to go round. You focus on your road for dodge water, and see a strange black column. Wtf is that?")
 
-const werewolf = new Character("Werewolf", 50, 20 , 10,true,true, "minigameImg/Werewolf.jpg","You felt the thrill on your neck! How can exist a monster like this? You understood why you hear","the wood crack this thing was greater than tree. You see an human like shape kneeling, as virtous","man you are, you try to see if u can help him and find a metamorph who waiting for eat someone.")
+const werewolf = new Character("Werewolf", 75, 30 , 15,true,true, "minigameImg/Werewolf.jpg","You felt the thrill on your neck! How can exist a monster like this? You understood why you hear","the wood crack this thing was greater than tree. You see an human like shape kneeling, as virtous","man you are, you try to see if u can help him and find a metamorph who waiting for eat someone.")
 
-const demon = new Character("Demon", 100, 10, 0, true,false, "minigameImg/Demon.jpg","One less abomition for the wolrd. The travel was hard but i see the castle entrance. It would be a ","good idea to take a little break on castle courts. after this u take your bravery on hands and begin"," Castle exploration. On Throne Room you find an Demon making occult ceremony and sacrifice.")
+const demon = new Character("Demon", 150, 25, 20, true,false, "minigameImg/Demon.jpg","One less abomition for the wolrd. The travel was hard but i see the castle entrance. It would be a ","good idea to take a little break on castle courts. after this u take your bravery on hands and begin"," Castle exploration. On Throne Room you find an Demon making occult ceremony and sacrifice.")
 
 const boss = new Character('Redirection Button',999,500,100,true,true, "minigameImg/Boss.jpg", `Dragon :"who are you small bug? no way i don't care. My name is Redirection-Event.`,`what are you doing here? There in no place for you here. I will bring you back to your own World.`, `Be ready that will burnt a little. Go and press this big blue button just above"` )
 
